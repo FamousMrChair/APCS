@@ -36,10 +36,8 @@ public class DeciBin {
     System.out.print(remainders(31));
   }
 }
-  
-    </p>
-<p>
-1) Create the variable n. We will be assigning n values to each digit in the binary number.
+</p>
+<p> 1) Create the variable n. We will be assigning n values to each digit in the binary number.
 2) Begin at the last digit of the binary number.
 3) Set n = 0.
 4) Move to the next digit on the left and assign a n value.
