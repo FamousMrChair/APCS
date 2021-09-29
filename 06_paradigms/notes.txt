@@ -1,0 +1,13 @@
+Scheme:
+
+(display "Hello, World!")
+
+Netlogo:
+
+to hi
+print "Hello, World!"
+end
+
+Python:
+
+print ("Hello, World!")
