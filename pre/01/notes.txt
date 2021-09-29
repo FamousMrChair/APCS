@@ -1,0 +1,1 @@
+Hello World! Simple first program, I got introduced to the syntax of creating a public class and then a public class void (main)
