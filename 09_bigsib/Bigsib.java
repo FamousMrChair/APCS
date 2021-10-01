@@ -14,7 +14,7 @@ What does (Stringp[] args) of void main do?
 What does public static mean?
 */
 
-public class Bigsib {
+public class BigSib {
 	public static void main(String[] args){
 		bigsib.greet("Jomin");
 		bigsib.greet("Anthony");
