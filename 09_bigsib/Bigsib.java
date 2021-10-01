@@ -20,7 +20,7 @@ public class Bigsib {
 		bigsib.greet("Anthony");
 		bigsib.greet("Kevin");
 	}
-	public static void bigsib.greet(String str){
+	public static void greet(String str){
 		System.out.println("Why, hello there, " + str + ". How do you do?");
 	}
 }
