@@ -1,7 +1,7 @@
 /* Kevin Xiao
 APCS
-HW 08 - Greet Function
-2021 09 30
+HW 09 - What are Big Sibs good for?
+2021 10 01
 
 DISCOVERIES:
 
@@ -14,13 +14,13 @@ What does (Stringp[] args) of void main do?
 What does public static mean?
 */
 
-public class Greet {
+public class Bigsib {
 	public static void main(String[] args){
-		greet("Jomin");
-		greet("Anthony");
-		greet("Kevin");
+		bigsib.greet("Jomin");
+		bigsib.greet("Anthony");
+		bigsib.greet("Kevin");
 	}
-	public static void greet(String str){
+	public static void bigsib.greet(String str){
 		System.out.println("Why, hello there, " + str + ". How do you do?");
 	}
 }
