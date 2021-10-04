@@ -15,7 +15,7 @@ What does public static mean?
 */
 
 
-package BigSib;
+package pack;
 public class BigSib {
 	public static void main(String[] args){
 	}
