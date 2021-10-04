@@ -16,9 +16,6 @@ What does public static mean?
 
 public class BigSib {
 	public static void main(String[] args){
-		bigsib.greet("Jomin");
-		bigsib.greet("Anthony");
-		bigsib.greet("Kevin");
 	}
 	public static void greet(String str){
 		System.out.println("Why, hello there, " + str + ". How do you do?");
