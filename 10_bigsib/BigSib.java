@@ -24,7 +24,7 @@ public class BigSib {
 	public static void main(String[] args){
 	}
 	public static void greet(String str){
-		System.out.println("Why, hello there, " + str + ". How do you do?");
+		return "Why, hello there, " + str + ". How do you do?";
 	}
 }
 
