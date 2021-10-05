@@ -23,7 +23,7 @@ package pack;
 public class BigSib {
 	public static void main(String[] args){
 	}
-	public static void greet(String str){
+	public static String greet(String str){
 		return "Why, hello there, " + str + ". How do you do?";
 	}
 }
