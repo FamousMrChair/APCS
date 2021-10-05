@@ -21,8 +21,6 @@ How to import all of the classes of a java file?
 
 package pack;
 public class BigSib {
-	public static void main(String[] args){
-	}
 	public static String greet(String str){
 		return "Why, hello there, " + str + ". How do you do?";
 	}
