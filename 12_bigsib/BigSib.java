@@ -13,7 +13,10 @@ How to import all of the classes of a java file?
 
 public class BigSib {
 	String HelloMsg;
+	public static void HelloMsg(String str){
+		HelloMsg = greets;
+	}
 	public static String greet(String str){
-		return HelloMsg + str;
+		return HelloMsg + " " + str;
 	}
 }
