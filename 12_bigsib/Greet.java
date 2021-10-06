@@ -16,14 +16,28 @@ How to import all of the classes of a java file?
 
 */
 
+public class Greet {
+  public static void main( String[] args ) {
+    String greeting;
 
-package pack;
-import pack.BigSib;
-public class Greet{
-	public static void main(String[] args){
-		System.out.println(BigSib.greet("Kevin"));
-        	System.out.println(BigSib.greet("Nicole"));
-        	System.out.println(BigSib.greet("Jomin"));
-	}
-}
-    
+    BigSib richard = new BigSib();
+    richard.setHelloMsg("Word up");
+    greeting = richard.greet("freshman");
+    System.out.println(greeting);
+	  
+    richard.setHelloMsg("Salutations");
+    greeting = richard.greet("Dr. Spaceman");
+    System.out.println(greeting);
+	  
+    richard.setHelloMsg("Hey ya");
+    greeting = richard.greet("Kong Fooey");
+    System.out.println(greeting);
+	  
+    richard.setHelloMsg("Sup");
+    greeting = richard.greet("mom");
+    System.out.println(greeting);
+
+  } //end main()
+} //end Greet
+
+
