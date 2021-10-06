@@ -1,19 +1,12 @@
 /* Zooming Xippy Zookeepers, Kevin (Mr. Swag), Nicole (Duck), Jomin (Chompsky) 
 APCS
-HW 10 - Refactor Big Sib One
-2021 10 04
+HW 12 - On Elder Individuality and the Elimination of Radio Fuzz
+2021 10 05
+DISCO:
+Using static in "public static void" will create an error message when instance variable HelloMsg is involved.
 
-DISCOVERIES:
-
-(Must have package <name> in the file that is doing the calling as well)
-Run program by typing javac -d <file>.java
-java <name>.<file>
-
-Unresolved questions:
-
-How to import a specific class of a java file?
-How to import all of the classes of a java file?
-
+Q/C/C:
+Why is static giving error?
 */
 
 public class Greet {
