@@ -14,7 +14,7 @@ How to import all of the classes of a java file?
 public class BigSib {
 	String HelloMsg;
 	public void HelloMsg(String str){
-		HelloMsg = greets;
+		HelloMsg = str;
 	}
 	public String greet(String str){
 		return HelloMsg + " " + str;
