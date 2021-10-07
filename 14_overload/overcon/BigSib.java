@@ -1,19 +1,18 @@
-/* Mr. Staley forgot us, Kevin (Mr. Swag) and Corina
-APCS
-HW 13 - Where do BigSibs Come From?
-2021 10 06
-DISCO:
-Constructors variables can't be changed to other strings once set.
 
-Q/C/C:
-
-Why do constructors have to be public?
-Why do constructors not have a void element?
-Why do constructors exist?
-Can't we do everything constructors and instance variables do with regular methods?
-Why are we doing this at all?
-What is Corina's ducky's name and will she ever tell me?
-*/
+   
+/* "Trio config for one day": Kevin Xiao + Mr. Swag, Corina Chen + Binktop, Anthony Sun + Corn
+ * APCS
+ * HW14 -- Overloading constructors
+ * 2021-10-07
+ *
+DISCOVERIES:
+ * The constructor can be overloaded to perform different tasks if given different argument inputs.
+ * Each other's ducky names
+ * You can stack multiple constructors together in the same file (overloading)
+QCC:
+ * What happens if a constructor is private?
+ * Why doesn't a constructor have "static"?
+ */
 
 public class BigSib {
 	String HelloMsg;
