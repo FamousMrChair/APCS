@@ -17,6 +17,9 @@ What is Corina's ducky's name and will she ever tell me?
 
 public class BigSib {
 	String HelloMsg;
+	public BigSib(){
+		HelloMsg = "Hello";
+	}
 	public BigSib(String str){
 		HelloMsg = str;
 	}
