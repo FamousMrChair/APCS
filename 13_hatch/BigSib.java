@@ -11,10 +11,10 @@ Why is static giving error?
 
 public class BigSib {
 	String HelloMsg;
-	public void setHelloMsg(String str){
+	public void BigSib(String str){
 		HelloMsg = str;
 	}
 	public String greet(String str){
-		return HelloMsg + " " + str;
+		return HelloMsg;
 	}
 }
