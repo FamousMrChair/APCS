@@ -12,19 +12,17 @@ Why is static giving error?
 public class Greet {
   public static void main( String[] args ) {
     String greeting;
-
-    BigSib richard = new BigSib();
-
-    greeting = richard.greet("Word up freshman");
+    BigSib richard = new BigSib("Word up");
+    greeting = richard.greet("freshman");
     System.out.println(greeting);
-
-    greeting = richard.greet("Salutations Dr. Spaceman");
+	  BigSib richard = new BigSib("Salutations");
+    greeting = richard.greet("Dr. Spaceman");
     System.out.println(greeting);
-	  
-    greeting = richard.greet("Hey ya Kong Fooey");
+	  BigSib richard = new BigSib("Hey ya");
+    greeting = richard.greet("Kong Fooey");
     System.out.println(greeting);
-	  
-    greeting = richard.greet("Sup mom");
+	  BigSib richard = new BigSib("Sup");
+    greeting = richard.greet("mom");
     System.out.println(greeting);
 
   } //end main()
