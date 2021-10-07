@@ -24,11 +24,11 @@ public class Greet{
                 BigSib tracy = new BigSib();
         greeting = richard.greet("freshman");
         System.out.println(greeting);
-                greeting = richard.greet("Dr. Spaceman");
+                greeting = grizz.greet("Dr. Spaceman");
                 System.out.println(greeting);
-                greeting = richard.greet("Kong Fooey");
+                greeting = dotCom.greet("Kong Fooey");
                 System.out.println(greeting);
-                greeting = richard.greet("mom");
+                greeting = tracy.greet("mom");
                 System.out.println(greeting);
     }
 }
