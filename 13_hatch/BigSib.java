@@ -15,6 +15,6 @@ public class BigSib {
 		HelloMsg = str;
 	}
 	public String greet(String str){
-		return HelloMsg;
+		return HelloMsg + " " + str;
 	}
 }
