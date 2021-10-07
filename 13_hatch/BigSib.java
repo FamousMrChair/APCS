@@ -11,7 +11,7 @@ Why is static giving error?
 
 public class BigSib {
 	String HelloMsg;
-	public static void BigSib(String str){
+	public BigSib(String str){
 		HelloMsg = str;
 	}
 	public String greet(String str){
