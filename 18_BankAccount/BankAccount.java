@@ -44,7 +44,7 @@ public class BankAccount {
     return accBalance;
   }
   public String toString () {
-    return ("" + holderName + "\n" + accountNumber + "\n" + accBalance);
+    return("" + holderName + "\n" + accountNumber + "\n" + accBalance);
     }
   public static void main(String[] args) {
     BankAccount Account = new BankAccount ();
@@ -55,7 +55,7 @@ public class BankAccount {
     Account.setBalance(1000.00);
     Account.deposit(500);
     Account.withdraw(241);
-    Account.toString();
+    System.out.println(Account.toString());
   
     }
 }
