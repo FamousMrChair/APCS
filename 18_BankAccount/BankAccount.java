@@ -43,7 +43,7 @@ public class BankAccount {
     }
   public static void main(String[] args) {
     BankAccount Account = new BankAccount ();
-    Account.setName("John)
+    Account.setHolderName("John");
     Account.setAccountPassword("hellotheremyfriends");
     Account.setPin(2131);
     Account.setAccountNumber(123456789);
