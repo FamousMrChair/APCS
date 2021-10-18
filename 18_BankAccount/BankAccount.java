@@ -1,12 +1,13 @@
 /*
-DISCO: 
-QCC: 
+DISCO: We discovered that you can declare a new object within the main method, and then it also eliminates the need to have static in your methods.
+Declaring a new object in the main method can allow you to initialize it using non-static methods inside a static context.
+QCC: Why does the main method have to be static?
+How would we create a method that allows the user to create their own account via their own inputs?
 Team NIWWD's Latest and Greatest Q2 Response: We know that Java provides a default contructor before we wrote our own constructor because we can call upon a new 
-object in the main method without creating a constructor in our file. 
-Team NIWWD's Latest and Greatest Q3 Response:
-  BankAccount Account = new BankAccount ("John", 123098765, 140.99);
-  System.out.println (Account);
-Its output is "BankAccount@5d22bbb7"
+object in the main method without creating a constructor in our file. We can then also initialize all of the instance variables of our object within our main
+method. Thus, we can assume that java provides for us a default constructor.
+Team NIWWD's Latest and Greatest Q3 Response: We simply create an object and then run System.out.println(Object). For our specific object that we created,
+we found that it prints out BankAccount@49476842, essentially a string representation of the object.
 */
 
 public class BankAccount {
@@ -55,7 +56,6 @@ public class BankAccount {
     Account.deposit(500);
     Account.withdraw(241);
     Account.toString();
-    System.out.println(Account);
   
     }
 }
