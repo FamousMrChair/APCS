@@ -68,8 +68,17 @@ public class BankAccount {
     balance = balance + depositAmount;
   }
 
-  public void withdraw( double withdrawAmount ) {
-    balance = balance - withdrawAmount;
+  public boolean withdraw( double withdrawAmount ) {
+    if (withdrawAmount <= balance){
+      balance = balance - withdrawAmount;
+      return true;
+  }
+    else {
+       return false;
+       System.out.println("There are not enough sufficient funds to be withdrawn.");
+    }
+    public boolean authenticate(int accountNum, String password){
+       return acctNum == accountNum && passwd == password;
   }
 
 
@@ -97,6 +106,8 @@ public class BankAccount {
     ba.deposit(500.0);
     ba.withdraw(241.0);
     System.out.println(ba.toString());
+     
+    System.out.println(ba.authenticate(123456789, "hellotheremyfriends"));
   }
 
 }
