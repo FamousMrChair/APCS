@@ -2,6 +2,7 @@
 DISCO: We discovered that you can declare a new object within the main method, and then it also eliminates the need to have static in your methods.
 Declaring a new object in the main method can allow you to initialize it using non-static methods inside a static context.
 QCC: Why does the main method have to be static?
+Why does printing the object sometime print the string representation and sometime print the BankAccount info?
 How would we create a method that allows the user to create their own account via their own inputs?
 Team NIWWD's Latest and Greatest Q2 Response: We know that Java provides a default contructor before we wrote our own constructor because we can call upon a new 
 object in the main method without creating a constructor in our file. We can then also initialize all of the instance variables of our object within our main
