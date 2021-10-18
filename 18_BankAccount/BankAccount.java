@@ -43,7 +43,7 @@ public class BankAccount {
      accBalance = newBalance;
     return accBalance;
   }
-  private String toString () {
+  public String toString () {
     return ("" + holderName + "\n" + accountNumber + "\n" + accBalance);
     }
   public static void main(String[] args) {
