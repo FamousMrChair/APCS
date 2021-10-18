@@ -21,16 +21,16 @@ public class BankAccount {
   private void deposit (double depositAmount) {
     accBalance = accBalance + depositAmount;
     }
-  private setHolderName (String name) {
+  private String setHolderName (String name) {
     holderName = name;
     }
-  private setAccountNumber (int accNum) {
+  private int setAccountNumber (int accNum) {
     accountNumber = accNum;
     }
-  private setAccountPassword (String accPW) {
+  private String setAccountPassword (String accPW) {
     accountPassword = accPW;
     }
-  private setPin (int accPIN) {
+  private int setPin (int accPIN) {
     pin = accPIN;
     }
   public double setBalance(double newBalance ) {
