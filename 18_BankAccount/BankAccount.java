@@ -27,7 +27,7 @@ public class BankAccount {
     }
   private int setAccountNumber (int accNum) {
     accountNumber = accNum;
-    return accountNumber
+    return accountNumber;
     }
   private String setAccountPassword (String accPW) {
     accountPassword = accPW;
