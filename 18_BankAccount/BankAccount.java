@@ -1,4 +1,5 @@
 /*
+NIWWD: Kevin Xiao + Mr. Swag, Jeffery Tang + Mathias, Kaitlin Ho + Apple
 DISCO: We discovered that you can declare a new object within the main method, and then it also eliminates the need to have static in your methods.
 Declaring a new object in the main method can allow you to initialize it using non-static methods inside a static context.
 QCC: Why does the main method have to be static?
