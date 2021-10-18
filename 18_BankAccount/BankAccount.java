@@ -23,18 +23,23 @@ public class BankAccount {
     }
   private String setHolderName (String name) {
     holderName = name;
+    return holderName;
     }
   private int setAccountNumber (int accNum) {
     accountNumber = accNum;
+    return accountNumber
     }
   private String setAccountPassword (String accPW) {
     accountPassword = accPW;
+    return accountPassword;
     }
   private int setPin (int accPIN) {
     pin = accPIN;
+    return pin;
     }
   public double setBalance(double newBalance ) {
      accBalance = newBalance;
+    return accBalance;
   }
   private void printInfo () {
     System.out.println (holderName);
