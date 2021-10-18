@@ -56,6 +56,6 @@ public class BankAccount {
     Account.setBalance(1000.00);
     Account.deposit(500);
     Account.withdraw(241);
-    Account.toString();
+    System.out.println(Account.toString());
     }
 }
