@@ -57,6 +57,5 @@ public class BankAccount {
     Account.deposit(500);
     Account.withdraw(241);
     Account.toString();
-    print(Account);
     }
 }
