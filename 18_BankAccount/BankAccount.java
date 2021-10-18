@@ -1,7 +1,8 @@
 /*
 DISCO: 
 QCC: 
-Team NIWWD's Latest and Greatest Q2 Response: We know that Java provides a default contructor before we wrote our own constructor because 
+Team NIWWD's Latest and Greatest Q2 Response: We know that Java provides a default contructor before we wrote our own constructor because we can call upon a new 
+object in the main method without creating a constructor in our file. 
 Team NIWWD's Latest and Greatest Q3 Response:
   BankAccount Account = new BankAccount ("John", 123098765, 140.99);
   System.out.println (Account);
@@ -41,10 +42,8 @@ public class BankAccount {
      accBalance = newBalance;
     return accBalance;
   }
-  private void printInfo () {
-    System.out.println (holderName);
-    System.out.println (accountNumber);
-    System.out.println (accBalance);
+  private String toString () {
+    return ("" + holderName + "\n" + accountNumber + "\n" + accBalance);
     }
   public static void main(String[] args) {
     BankAccount Account = new BankAccount ();
@@ -55,7 +54,7 @@ public class BankAccount {
     Account.setBalance(1000.00);
     Account.deposit(500);
     Account.withdraw(241);
-    Account.printInfo();
+    Account.toString();
     System.out.println(Account);
   
     }
