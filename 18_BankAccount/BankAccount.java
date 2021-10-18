@@ -53,7 +53,10 @@ public class BankAccount {
     Account.setPin(2131);
     Account.setAccountNumber(123456789);
     Account.setBalance(1000.00);
+    Account.deposit(500);
+    Account.withdraw(241);
     Account.printInfo();
-    
+    System.out.println(Account);
+  
     }
 }
