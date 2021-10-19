@@ -84,7 +84,8 @@ public class BankAccount {
       return false;
     }
   }
-  public boolean authenticate(int enteredAccNum, String enteredPasswd);{
+ // Deleted semicolon after enteredPasswd);
+  public boolean authenticate(int enteredAccNum, String enteredPasswd){
     if (enteredAccNum == acctNum && enteredPasswd == passwd){
       return true;
     }
