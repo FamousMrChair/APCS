@@ -44,6 +44,7 @@ public class BankAccount {
       System.out.println ("The entered PIN is not a 4 digit number; please enter a 4 digit number");
       return 9999;
     }
+  }
 
   public int setAcctNum( int newAcctNum ) {
     if (100000000 <= newAcctNum && newAcctNum <= 999999998) {
@@ -54,6 +55,7 @@ public class BankAccount {
     else {
        System.out.println ("The entered Account Number is not a 9 digit number; please enter a 9 digit number");
        return 999999999;
+    }
   }
 
   public double setBalance( double newBalance ) {
