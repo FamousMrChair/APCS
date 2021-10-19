@@ -36,8 +36,8 @@ public class BankAccount {
   }
 
   public short setPin( short newPin ) {
+    short oldPin = pin;
     if ((short) 1000 <= newPin && newPin <= (short) 9998){
-      short oldPin = pin;
       pin = newPin;
   }
     else {
@@ -48,8 +48,8 @@ public class BankAccount {
   }
 
   public int setAcctNum( int newAcctNum ) {
+    int oldAcctNum = acctNum;
     if (100000000 <= newAcctNum && newAcctNum <= 999999998) {
-      int oldAcctNum = acctNum;
       acctNum = newAcctNum;
     }
     else {
