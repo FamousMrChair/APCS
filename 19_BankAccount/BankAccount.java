@@ -6,8 +6,9 @@
 **/
 
 /**
-   DISCO: 
-   QCC: 
+   DISCO: We can use if statements within methods.
+   QCC: Why does our program return a 0 for the accountNumber when we give it a integer greater than 9 digits?
+   How to return 
 **/
 
 public class BankAccount {
@@ -38,26 +39,24 @@ public class BankAccount {
     if ((short) 1000 <= newPin && newPin <= (short) 9998){
       short oldPin = pin;
       pin = newPin;
-      return oldPin;
   }
     else {
       System.out.println ("The entered PIN is not a 4 digit number; please enter a 4 digit number");
       short oldPin = (short) 999999999;
-      return oldPin;
     }
+     return oldPin;
   }
 
   public int setAcctNum( int newAcctNum ) {
     if (100000000 <= newAcctNum && newAcctNum <= 999999998) {
       int oldAcctNum = acctNum;
       acctNum = newAcctNum;
-      return oldAcctNum;
     }
     else {
        System.out.println ("The entered Account Number is not a 9 digit number; please enter a 9 digit number");
        int oldAcctNum = 999999999;
-       return oldAcctNum;
     }
+    return oldAcctNum;
   }
 
   public double setBalance( double newBalance ) {
