@@ -6,8 +6,11 @@
 **/
 
 /**
-   DISCO: We can use if statements within methods.
-   QCC: Why does our program return a 0 for the accountNumber when we give it a integer greater than 9 digits?
+   DISCO: We can use boolean if statements within methods. We have to declare our variables outside of our if statements.
+   QCC: When we put our return line before our print line, why didn't we return anything?
+   How would we allow the user to input into the machine? (How would we implement scanners into our program?)
+   Is there any way to cheat our authentication?
+   
    How to return 
 **/
 
