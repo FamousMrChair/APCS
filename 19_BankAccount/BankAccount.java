@@ -128,6 +128,5 @@ public class BankAccount {
     TEST1.withdraw(200.0);
     System.out.println(TEST1.toString());
   }
-  }
 
 }
