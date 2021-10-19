@@ -109,9 +109,13 @@ public class BankAccount {
     ba.deposit(500.0);
     ba.withdraw(241.0);
     System.out.println(ba.toString());
+    System.out.println("Bad TestID and bad password.");
     System.out.println(ba.authenticate(123213512,"holacomaestas!"));
-    System.out.println(ba.authenticate(1232134,"holacomaestas!"));
+    System.out.println("Good TestID and bad password.");
+    System.out.println(ba.authenticate(123456789,"holacomaestas!"));
+    System.out.println("Bad TestID and good password.");
     System.out.println(ba.authenticate(121235,"hellotheremyfriends"));
+    System.out.println("Good TestID and good password.");
     System.out.println(ba.authenticate(123456789, "hellotheremyfriends"));
   }
 
