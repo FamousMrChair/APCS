@@ -76,8 +76,8 @@ public class BankAccount {
       return true;
   }
     else {
-       return false;
        System.out.println("There are not enough sufficient funds to be withdrawn.");
+       return false;
     }
   }
  public boolean authenticate(int accountNum, String password){
