@@ -1,0 +1,7 @@
+public class StatsDriver {
+  public static void main(String[] args){
+
+    System.out.print(Stats.mean(1,5));
+    System
+  }
+}
