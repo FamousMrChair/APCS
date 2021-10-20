@@ -47,10 +47,10 @@ public class Stats {
   }
 
   public static int max(int a, int b, int c) {
-	if (a > b && a > c)){
+	if (a > b && a > c){
   		return a;
   	}
-  	else if(b > c){
+  	elseif(b > c){
   		return b;
   	}
   	else {
@@ -61,7 +61,7 @@ public class Stats {
 	if (a > b && a > c)){
   		return a;
   	}
-  	else if(b > c){
+  	elseif(b > c){
   		return b;
   	}
   	else {
