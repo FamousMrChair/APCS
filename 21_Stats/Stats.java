@@ -1,11 +1,16 @@
 
 /**
-   Ur mom
+   NIWWD: Kevin Xiao + Mr. Swag, Jeffery Tang + Mathias, Kaitlin Ho + Apple
    APCS
-   HW21 --
+   HW21 -- STAtisTically Speaking...
    2021-10-21
-   xtra: harmonic mean is the reciprocal of the
-   arithmetic mean of the reciprocals
+   
+   DISCO: Math.round() exists. It converts a double to a long.
+   We can then convert said long into an int by adding (int)
+   
+   QCC:
+   How to implement a Math.round with our own code instead of importing java math?
+   
  **/
 
 public class Stats {
