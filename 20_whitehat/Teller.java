@@ -22,6 +22,8 @@ public class Teller{
     NIWWD.setBalance(123214);
     NIWWD.withdraw(1000000000);
     NIWWD.deposit(123123103);
+    //Overloading
+    NIWWD.setPin((short)1234);
     // Testing good password + good account number
     System.out.println(NIWWD.authenticate(999999999, "Hello World!"));
     // Testing good password + bad account number
@@ -31,6 +33,16 @@ public class Teller{
     // Testing bad password + bad account number
     System.out.println(NIWWD.authenticate(999988999, "Hello Word!"));
     System.out.println(NIWWD.toString());
+    //New objects but with bad arguments
+    BankAccount Thinkeren = new BankAccount();
+    Thinkeren.setPin(123);
+    Thinkeren.setAcctNum(21345);
+    Thinkeren.setPasswd(213);
+    Thinkeren.setName(001);
+    Thinkeren.setBalance("Hello World!");
+    System.out.println(Thinkeren.toString());
     }
+
+    
 }
 
