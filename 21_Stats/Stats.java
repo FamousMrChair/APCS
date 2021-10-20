@@ -37,6 +37,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b) {
+	int product = (a * b) // 1;
   	return Math.sqrt((a * b)//1);
   }
 
@@ -67,7 +68,8 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b, int c) {
-	return Math.cbrt((a * b * c)//1);
+	int product = (a * b * c) // 1;
+	return Math.cbrt(product);
   }
 
   public static double geoMean(double a, double b, double c) {
