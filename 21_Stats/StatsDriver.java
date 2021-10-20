@@ -15,10 +15,10 @@ public class StatsDriver {
     System.out.println(Stats.max(1.123912849,5.123812751) + "...should be 5.123812751");
     System.out.println(Stats.max(-1,-10000) + "...should be -1");
     System.out.println(Stats.geoMean(1,5) + "... should be 5");
-    System.out.println(Stats.geoMean(1.0,5.3) + "... should be 5.3");
-    System.out.println(Stats.geoMean(0,0) + "... should be undefined");
-    System.out.println(Stats.geoMean(0,5903) + "... should be undefined");
-    System.out.println(Stats.geoMean(0,0.213124) + "... should be undefined");
-    System.out.println(Stats.geoMean(1,21489318) + "... should be 21489318");
+    System.out.println(Stats.geoMean(1.0,5.3) + "... should be 2.3");
+    System.out.println(Stats.geoMean(0,0) + "... should be 0");
+    System.out.println(Stats.geoMean(0,5903) + "... should be 0");
+    System.out.println(Stats.geoMean(0,0.213124) + "... should be 0");
+    System.out.println(Stats.geoMean(1,289) + "... should be 17");
   }
 }
