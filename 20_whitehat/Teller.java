@@ -42,6 +42,7 @@ public class Teller{
     Thinkeren.setPasswd("213");
     Thinkeren.setName("001");
     Thinkeren.setBalance(-004);
+    Thinkeren.withdraw(-123213);
     System.out.println(Thinkeren.toString());
     }
 
