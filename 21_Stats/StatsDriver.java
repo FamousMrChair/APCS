@@ -17,7 +17,7 @@ public class StatsDriver {
     System.out.println(Stats.max(-1100,-500,-900) + "... should be -500");
     System.out.println(Stats.max(1.123912849,5.123812751) + "...should be 5.123812751");
     System.out.println(Stats.max(-1,-10000) + "...should be -1");
-    System.out.println(Stats.geoMean(1,5) + "... should be 5");
+    System.out.println(Stats.geoMean(1,9) + "... should be 3");
     System.out.println(Stats.geoMean(1.0,9.0) + "... should be 3.0");
     System.out.println(Stats.geoMean(0,0) + "... should be 0");
     System.out.println(Stats.geoMean(0,5903) + "... should be 0");
