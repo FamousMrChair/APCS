@@ -58,10 +58,10 @@ public class Stats {
   }
 
   public static double max(double a, double b, double c) {
-	if (a > b && a > c)){
+	if (a > b && a > c){
   		return a;
   	}
-  	elseif(b > c){
+  	elif(b > c){
   		return b;
   	}
   	else {
