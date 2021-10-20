@@ -37,7 +37,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b) {
-	int hello = Math.pow(a*b, 1/2)/1;
+	int hello = Math.round(Math.pow(a*b, 1/2));
  	return hello;
   }
 
@@ -68,7 +68,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b, int c) {
-	int hello = Math.pow(a*b*c, 1/3)/1;
+	int hello = Math.round(Math.pow(a*b*c, 1/3));
  	return hello;
   }
 
