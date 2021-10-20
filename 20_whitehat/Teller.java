@@ -3,7 +3,6 @@ NIWWD: Kevin Xiao + Mr. Swag, Jeffery Tang + Mathias, Kaitlin Ho + Apple
 APCS
 HW20 -- External Audit
 2021-10-20
-
 DISCO:
 1. Removed ; on line 87 after parameters (all of the below statements only apply after this revision)
 2. When entered 999999999 and 9999 for the accountnumber and pin, there was no error message
@@ -19,9 +18,7 @@ account but it doesn't make sense in a bankAccount context.
 QCC:
 How would we implement a method into our code to prevent a negative number in our balance account?
 */
-
 public class Teller{
-  
   public static void main(String[] args){
   BankAccount NIWWD = new BankAccount();
     NIWWD.setPin((short)9999);
