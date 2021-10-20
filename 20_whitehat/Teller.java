@@ -10,6 +10,7 @@ returned.
 3. Withdraw works.
 4. Authenticate has full functionality
 5. Prints out error message if pin is not a 4 digit number, and also prints out an error message if account number is not 9 digits.
+6. They can have negative balance
 */
 
 public class Teller{
