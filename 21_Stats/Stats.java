@@ -71,10 +71,11 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b, int c) {
-
+	return Math.cbrt(a * b * c);
   }
 
   public static double geoMean(double a, double b, double c) {
+	return Math.cbrt(a * b * c);
 
   }
 
