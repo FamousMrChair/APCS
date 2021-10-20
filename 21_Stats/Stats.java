@@ -42,7 +42,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b) {
-	int hello = (int)Math.round(Math.sqrt(a * b));
+	int hello = Math.toIntExact(Math.round(Math.sqrt(a * b)));
  	return hello;
   }
 
@@ -73,7 +73,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b, int c) {
-	int hello = (int)Math.round(Math.cbrt(a * b * c));
+	int hello = Math.toIntExact(Math.round(Math.cbrt(a * b * c)));
  	return hello;
   }
 
