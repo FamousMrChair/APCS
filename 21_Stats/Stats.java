@@ -37,7 +37,7 @@ public class Stats {
   }
 
   public static int geoMean(int a, int b) {
-	int hello = (int)Math.round(Math.sqrt(a * b * c));
+	int hello = (int)Math.round(Math.sqrt(a * b));
  	return hello;
   }
 
