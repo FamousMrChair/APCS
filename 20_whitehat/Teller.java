@@ -9,6 +9,7 @@ HW20 -- External Audit
 returned.
 3. Withdraw works.
 4. Authenticate has full functionality
+5. Prints out error message if pin is not a 4 digit number, and also prints out an error message if account number is not 9 digits.
 */
 
 public class Teller{
@@ -39,7 +40,7 @@ public class Teller{
     Thinkeren.setAcctNum(21345);
     Thinkeren.setPasswd("213");
     Thinkeren.setName("001");
-    Thinkeren.setBalance(004);
+    Thinkeren.setBalance(-004);
     System.out.println(Thinkeren.toString());
     }
 
