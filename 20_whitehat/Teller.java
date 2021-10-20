@@ -35,11 +35,11 @@ public class Teller{
     System.out.println(NIWWD.toString());
     //New objects but with bad arguments
     BankAccount Thinkeren = new BankAccount();
-    Thinkeren.setPin(123);
+    Thinkeren.setPin((short)123);
     Thinkeren.setAcctNum(21345);
-    Thinkeren.setPasswd(213);
-    Thinkeren.setName(001);
-    Thinkeren.setBalance("Hello World!");
+    Thinkeren.setPasswd("213");
+    Thinkeren.setName("001");
+    Thinkeren.setBalance(004);
     System.out.println(Thinkeren.toString());
     }
 
