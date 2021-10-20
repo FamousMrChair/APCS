@@ -23,5 +23,8 @@ public class StatsDriver {
     System.out.println(Stats.geoMean(0,5903) + "... should be 0");
     System.out.println(Stats.geoMean(0,0.213124) + "... should be 0.0");
     System.out.println(Stats.geoMean(1,289) + "... should be 17");
+    System.out.println(Stats.geoMean(4,4,4) + "... should be 4");
+    System.out.println(Stats.geoMean(1,1,64) + "... should be 4");
+    System.out.println(Stats.geoMean(1.0,10.0,100.0) + "... should be 10.0");
   }
 }
