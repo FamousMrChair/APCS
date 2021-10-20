@@ -41,7 +41,7 @@ public class Stats {
   }
 
   public static double geoMean(double a, double b) {
-	double product = (a * b)
+	double product = (a * b);
   	return Math.sqrt(product);
   }
 
