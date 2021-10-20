@@ -15,7 +15,7 @@ returned.
 7. When you withdraw a negative number, it adds to your account balance. This makes sense mathematically because you are subtracting a negative from your bank
 account but it doesn't make sense in a bankAccount context.
 8. When you deposite a negative number, it subtracts from your account balance. It also goes through and allow your balance to go into the negatives.
-
+9. It might not be able to utilize objects created in BankAccount.java's main() method in Teller.java
 QCC:
 How would we implement a method into our code to prevent a negative number in our balance account?
 */
