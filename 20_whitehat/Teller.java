@@ -24,6 +24,12 @@ public class Teller{
     NIWWD.deposit(123123103);
     // Testing good password + good account number
     System.out.println(NIWWD.authenticate(999999999, "Hello World!"));
+    // Testing good password + bad account number
+    System.out.println(NIWWD.authenticate(999999989, "Hello World!"));
+    // Testing bad password + good account number
+    System.out.println(NIWWD.authenticate(999999999, "Hello Wrld!"));
+    // Testing bad password + bad account number
+    System.out.println(NIWWD.authenticate(999988999, "Hello Word!"));
     System.out.println(NIWWD.toString());
     }
 }
