@@ -22,6 +22,8 @@ public class Teller{
     NIWWD.setBalance(123214);
     NIWWD.withdraw(1000000000);
     NIWWD.deposit(123123103);
+    // Testing good password + good account number
+    System.out.println(NIWWD.authenticate(999999999, "Hello World!");
     System.out.println(NIWWD.toString());
     }
 }
