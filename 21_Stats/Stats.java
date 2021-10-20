@@ -51,6 +51,7 @@ public class Stats {
   		return b;
   	} else {
   		return c;
+	}
   }
 
   public static double max(double a, double b, double c) {
