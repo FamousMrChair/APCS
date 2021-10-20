@@ -53,7 +53,4 @@ public class Teller{
     Thinkeren.deposit(-213123);
     System.out.println(Thinkeren.toString());
     }
-
-    
 }
-
