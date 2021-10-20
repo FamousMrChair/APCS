@@ -71,7 +71,8 @@ public class Stats {
   }
 
   public static double geoMean(double a, double b, double c) {
-	return Math.cbrt(a * b * c);
+	double product = (a * b * c);
+	return Math.cbrt(product);
 
   }
 
