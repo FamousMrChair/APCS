@@ -21,7 +21,7 @@ public class Teller{
     NIWWD.setName("Mykolyk");
     NIWWD.setBalance(123214);
     NIWWD.withdraw(1000000000);
-    NIWWD.deposit(123123120931203);
+    NIWWD.deposit(12312312203);
     System.out.println(NIWWD.toString());
     }
 }
