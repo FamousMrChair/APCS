@@ -6,7 +6,7 @@
    2021-10-21
    
    DISCO: Math.round() exists. It converts a double to a long.
-   We can then convert said long into an int by adding (int)
+   We can then convert said long into an int by adding Math.toIntExact()
    
    QCC:
    How to implement a Math.round with our own code instead of importing java math?
