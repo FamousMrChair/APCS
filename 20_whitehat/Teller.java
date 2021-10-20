@@ -5,17 +5,19 @@ HW20 -- External Audit
 2021-10-20
 
 DISCO:
-
 1. Removed ; on line 87 after parameters (all of the below statements only apply after this revision)
 2. When entered 999999999 and 9999 for the accountnumber and pin, there was no error message
 returned.
 3. Withdraw works.
 4. Authenticate has full functionality
 5. Prints out error message if pin is not a 4 digit number, and also prints out an error message if account number is not 9 digits.
-6. They can have negative balance
+6. They can have negative balance, doesn't make sense in a context where you can't withdraw more than you have.
 7. When you withdraw a negative number, it adds to your account balance. This makes sense mathematically because you are subtracting a negative from your bank
 account but it doesn't make sense in a bankAccount context.
-8.
+8. When you deposite a negative number, it subtracts from your account balance. It also goes through and allow your balance to go into the negatives.
+
+QCC:
+How would we implement a method into our code to prevent a negative number in our balance account?
 */
 
 public class Teller{
