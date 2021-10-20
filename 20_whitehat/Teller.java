@@ -4,11 +4,11 @@ APCS
 HW20 -- External Audit
 2021-10-20
 
-1. Removed ; on line 87 after parameters.
+1. Removed ; on line 87 after parameters (all of the below statements only apply after this revision)
 2. When entered 999999999 and 9999 for the accountnumber and pin, there was no error message
 returned.
 3. Withdraw works.
-4.
+4. Authenticate has full functionality
 */
 
 public class Teller{
