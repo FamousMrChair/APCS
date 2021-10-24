@@ -5,7 +5,6 @@ HW 23 - coin
 2021-10-22
 time spent: 30 min
  ***/
- 
 /*
 DISCO:
 * We learned that the "this" keyword allows you to reference the current object.
@@ -93,17 +92,13 @@ public class Coin {
   public double getValue() {
 	return value;
   }
-
   public int getHeadsCtr() {
 	return headsCtr;
   }
-
   public int getTailsCtr() {
 	return tailsCtr;
   }
   // ----------------------------
-
-
   /***
    * assignValue() -- set a Coin's monetary value based on its name
    * precond:  input String is a valid coin name ("penny", "nickel", etc.)
@@ -131,8 +126,6 @@ public class Coin {
 	}
 	return value;
   }
-
-
   /***
       reset() -- initialize a Coin
       precond:  s is "heads" or "tails", 0.0 <= d <= 1.0
@@ -145,8 +138,6 @@ public class Coin {
   	headsCtr = 0;
   	tailsCtr = 0;
   }
-
-
   /***
    * String flip() -- simulates a Coin flip
    * precond:  bias is a double on interval [0.0,1.0]
@@ -168,8 +159,6 @@ public class Coin {
 	}
 	return upFace;
   }
-
-
   /***
    * boolean equals(Coin) -- checks to see if 2 coins have same face up
    * precond: other is not null
@@ -179,8 +168,6 @@ public class Coin {
   public boolean equals( Coin other ) {
 	return this.upFace == other.upFace;
   }
-
-
   /***
    * String toString() -- overrides toString() provided by Java
    * precond: n/a
@@ -189,5 +176,4 @@ public class Coin {
   public String toString() {
 	return name + " " + upFace;
   }
-
 }//end class
