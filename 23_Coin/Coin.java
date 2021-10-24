@@ -8,7 +8,12 @@ time spent: 30 min
  
 /*
 DISCO:
-* We learned that the "this" keyword allows you to reference your current 
+* We learned that the "this" keyword allows you to reference the current object.
+* Math.random() returns a random value between 0 and 1.
+QCC:
+* How can use this calculate more advanced probability questions?
+* Bias can be inherently used to calculate probability (with random).
+* How would we account for permutations?
 */
 
 public class Coin {
