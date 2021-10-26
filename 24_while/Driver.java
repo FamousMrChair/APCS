@@ -1,6 +1,7 @@
+
+   
 /***
     driver for class Coin
-
     ~~~ SUGGESTED WORKFLOW: ~~~
     1. Compile this file and run. Note anything notable.
     2. Move the "TOP" line down, so that it is below the first statement.
@@ -48,8 +49,41 @@ public class Driver {
         System.out.println( "No match. Firestarter you can not be." );
       }
 
+      Coin uno = new Coin();
+      Coin dos = new Coin();
+
+      int x = 40;
+      while (uno.headsCtr + dos.headsCtr < x ){
+	      uno.flip();
+	      dos.flip();
+      }
+	System.out.println("flips: "+(uno.flipCtr + dos.flipCtr));
+	System.out.println("heads: "+(uno.headsCtr + dos.headsCtr));
+	uno.reset("heads", 0.50);
+	dos.reset("heads",0.50);
+	
+	int y = 120;
+	int matches = 0;
+	while (matches < y){
+		uno.flip();
+		dos.flip();
+		if (uno.equals(dos)){
+			matches += 1;
+		}
+	}
+	System.out.println("Matches: " + matches);
+	System.out.println("flips: "+(uno.flipCtr + dos.flipCtr));
+	uno.reset("heads",0.50);
+	dos.reset("heads",0.50);
+
+	
+
+      while (birth.flipCtr % 2005 != 0 || birth.flipCtr == 0) {
+              birth.flip();
+}
+      System.out.println(birth.headsCtr);
+      System.out.println(birth.flipCtr);
+      System.out.println("at least" + birth.flipCtr + " \
       // ====================BOTTOM======================
-
   }//end main()
-
 }//end class
