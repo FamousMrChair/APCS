@@ -1,5 +1,3 @@
-
-   
 /*
  * DELTA: Kevin Xiao + Mr. Swag, Anthony Sun + Corn
  * APCS
