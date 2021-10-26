@@ -1,14 +1,19 @@
 /***
 Delta - Anthony Sun + Corn & Kevin Xiao + Mr. Swag
 APCS
-HW 23 - coin
-2021-10-22
+HW 24 - coin
+2021-10-23
 time spent: 30 min
  ***/
  
 /*
 DISCO:
-* We learned that the "this" keyword allows you to reference your current 
+* We learned that the "this" keyword allows you to reference the current object.
+* Math.random() returns a random value between 0 and 1.
+QCC:
+* How can use this calculate more advanced probability questions?
+* Bias can be inherently used to calculate probability (with random).
+* How would we account for permutations?
 */
 
 public class Coin {
@@ -49,11 +54,7 @@ public class Coin {
       postcond:
   ***/
   public Coin( String s ) {
-  	flipCtr = 0;
-  	headsCtr = 0;
-  	tailsCtr = 0;
-  	name = s;
-  	bias = 0.5;
+  	this();
   	upFace = "heads";
   	value = assignValue(s);
   }
@@ -65,13 +66,8 @@ public class Coin {
       postcond:
   ***/
   public Coin( String s, String nowFace ) {
-    	flipCtr = 0;
-  	headsCtr = 0;
-  	tailsCtr = 0;
-  	name = s;
-  	bias = 0.5;
-  	upFace = nowFace;
-  	value = assignValue(s);
+	this(s);
+	upFace = nowFace;
   }
 
 
