@@ -19,16 +19,16 @@ public class Stats {
       while (counter < b) {
         if (a % counter == 0 && b % counter == 0) {
           g = counter;
-        counter += 1;
         }
+        counter += 1;
       }
     }
     else {
       while (counter < a) {
         if (a % counter == 0 && b % counter == 0) {
           g = counter;
-        counter += 1;
         }
+        counter += 1;
       }
     }
     return g;
