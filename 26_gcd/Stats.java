@@ -37,9 +37,9 @@ public class Stats {
   }
   public static int gcdER(int a, int b) {
      if (a > b){
-        return gcdEr(b, (b % a));
+        return gcdER(b, (b % a));
      }else{
-        return gcdEr(a, (a & b));
+        return gcdER(a, (a & b));
      }
   }
   /*
