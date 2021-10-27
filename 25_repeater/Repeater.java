@@ -26,6 +26,7 @@ public class Repeater {
     if (1 < numPosts) {
       fence += "--|";
       numPosts-=1;
+      fenceR(numPosts);
     }
     return fence;
   }
