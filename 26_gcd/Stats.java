@@ -50,10 +50,10 @@ public class Stats {
   public static int gcdEW(int a, int b) {
      while (a != 0 && b != 0){
         if (a < b){
-           b = b & a;
+           b = b % a;
         }
         if (a > b){
-           a = a & b;
+           a = a % b;
         }
      }
      if (a == 0){
