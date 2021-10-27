@@ -42,7 +42,7 @@ public class Stats {
         return a;
      }else if (a < b && a != 0){
         return gcdER(a, (b % a));
-     }else if(a == 0){
+     }else{
         return b;
      }
   }
