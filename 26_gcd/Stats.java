@@ -55,6 +55,9 @@ public class Stats {
         if (a > b){
            a = a % b;
         }
+        else{
+           return a;
+        }
      }
      if (a == 0){
         return b;
