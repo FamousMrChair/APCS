@@ -3,12 +3,15 @@
    APCS
    HW25 -- Repeater
    2021-10-26
-   time spent: .4
+   time spent: 30 mintes
 **/
 
 /**
    DISCO: 
+   Recursion exists and is a powerful tool that can be called upon in java by invoking the method within the method.
    QCC: 
+   Could we use recursion with negative intergers? 
+   How would a recursive program with double values work?
 **/
 
 public class Repeater {
