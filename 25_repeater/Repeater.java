@@ -25,6 +25,7 @@ public class Repeater {
     String fence = "|";
     if (1 < numPosts) {
       fence = fenceR(numPosts-1) + "--|";
+      return fence;
     }else {
       return fence;
     }
