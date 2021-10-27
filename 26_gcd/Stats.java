@@ -46,9 +46,22 @@ public class Stats {
         return b;
      }
   }
-  /*
+  
   public static int gcdEW(int a, int b) {
-  }*/
+     while (a != 0 && b != 0){
+        if (a < b){
+           b = b & a;
+        }
+        if (a > b){
+           a = a & b;
+        }
+     }
+     if (a == 0){
+        return b;
+     } else {
+        return a;
+     } 
+  }
   public static void main(String[] args) {
     System.out.println("gcd test:");
     System.out.println(gcd(3, 3));
@@ -60,10 +73,10 @@ public class Stats {
     System.out.println(gcdER(3, 6));
     System.out.println(gcdER(6, 10));
     System.out.println(gcdER(1000, 870));
-    /*
     System.out.println("gcdEW test:");
     System.out.println(gcdEW(3, 3));
     System.out.println(gcdEW(3, 6));
-    System.out.println(gcdEW(6, 10));*/
+    System.out.println(gcdEW(6, 10));
+    System.out.println(gcdEW(1000,870));
   }
 }
