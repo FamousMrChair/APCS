@@ -16,16 +16,16 @@ public class Stats {
     int counter = 1;
     int g = 1;
     if (a > b) {
-      while (counter < a) {
-        if (a % counter == 0 && a % counter == 0) {
+      while (counter < b) {
+        if (a % counter == 0 && b % counter == 0) {
           g = counter;
         counter += 1;
         }
       }
     }
     else {
-      while (counter < b) {
-        if (a % counter == 0 && a % counter == 0) {
+      while (counter < a) {
+        if (a % counter == 0 && b % counter == 0) {
           g = counter;
         counter += 1;
         }
