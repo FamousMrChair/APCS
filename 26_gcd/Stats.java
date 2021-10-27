@@ -54,10 +54,12 @@ public class Stats {
     System.out.println(gcd(3, 3));
     System.out.println(gcd(3, 6));
     System.out.println(gcd(6, 10));
+    System.out.println(gcd(1000, 870));
     System.out.println("gcdER test:");
     System.out.println(gcdER(3, 3));
     System.out.println(gcdER(3, 6));
     System.out.println(gcdER(6, 10));
+    System.out.println(gcdER(1000, 870));
     /*
     System.out.println("gcdEW test:");
     System.out.println(gcdEW(3, 3));
