@@ -39,3 +39,4 @@ public class Repeater {
     System.out.println(fenceR(2));
     System.out.println(fenceR(3));
   }
+}
