@@ -37,11 +37,11 @@ public class Stats {
   }
   public static int gcdER(int a, int b) {
      if (a > b && b != 0){
-        return gcdER(b, (b % a));
+        return gcdER(b, (a % b));
      }else if(b == 0){
         return a;
      }else if (a < b && a != 0){
-        return gcdER(a, (a & b));
+        return gcdER(a, (b % a));
      }else if(a == 0){
         return b;
      }
