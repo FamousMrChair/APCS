@@ -3,7 +3,7 @@
    APCS
    HW25 -- Repeater
    2021-10-26
-   time spent: 30 mintes
+   time spent: 0.5 hours
 **/
 
 /**
