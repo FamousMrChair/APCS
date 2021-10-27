@@ -26,9 +26,10 @@ public class Repeater {
     if (1 < numPosts) {
       fence += "--|";
       numPosts-=1;
-      fenceR(numPosts);
+      return fenceR(numPosts);
+    }else {
+      return fence;
     }
-    return fence;
   }
   public static void main( String[] args ) {
     System.out.println("While Test:");
