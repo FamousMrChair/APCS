@@ -16,7 +16,7 @@ public class Stats {
     int counter = 1;
     int g = 1;
     if (a > b) {
-      while (counter < b) {
+      while (counter <= b) {
         if (a % counter == 0 && b % counter == 0) {
           g = counter;
         }
@@ -24,7 +24,7 @@ public class Stats {
       }
     }
     else {
-      while (counter < a) {
+      while (counter <= a) {
         if (a % counter == 0 && b % counter == 0) {
           g = counter;
         }
