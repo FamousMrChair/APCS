@@ -36,10 +36,14 @@ public class Stats {
     return g;
   }
   public static int gcdER(int a, int b) {
-     if (a > b){
+     if (a > b && b != 0){
         return gcdER(b, (b % a));
-     }else{
+     }else if(b == 0){
+        return a;
+     }else if (a < b && a != 0){
         return gcdER(a, (a & b));
+     }else if(a == 0){
+        return b;
      }
   }
   /*
@@ -50,10 +54,11 @@ public class Stats {
     System.out.println(gcd(3, 3));
     System.out.println(gcd(3, 6));
     System.out.println(gcd(6, 10));
-    /*System.out.println("gcdER test:");
+    System.out.println("gcdER test:");
     System.out.println(gcdER(3, 3));
     System.out.println(gcdER(3, 6));
     System.out.println(gcdER(6, 10));
+    /*
     System.out.println("gcdEW test:");
     System.out.println(gcdEW(3, 3));
     System.out.println(gcdEW(3, 6));
