@@ -11,7 +11,7 @@ public class Rof {
   	for (int i = s.length(); i > 0; i -= 1){
   		p += s.substring(i);
   		}
-  	return s.substring(1);
+  	return s.substring(2);
   }
   public static void main(String[] args){
   	System.out.println(fenceF(3));
