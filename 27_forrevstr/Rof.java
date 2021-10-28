@@ -9,9 +9,9 @@ public class Rof {
   public static String reverseF(String s){
   	String p = "";
   	for (int i = s.length(); i > 0; i -= 1){
-  		p += s.substring(i);
+  		p += s.substring(i,i-1);
   		}
-  	return s.substring(2);
+  	return p;
   }
   public static void main(String[] args){
   	System.out.println(fenceF(3));
