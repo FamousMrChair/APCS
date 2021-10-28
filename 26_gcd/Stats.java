@@ -129,7 +129,7 @@ public class Stats {
   }
 	
   public static int gcdERA(int a, int b) {
-	  if ((a < 0 || b < 0) || (b == 0 && a == 0)) {
+	if ((a < 0 || b < 0) || (b == 0 && a == 0)) {
       System.out.print("Error: Invalid input(s) -> ");
       return 0;
     }
@@ -179,6 +179,11 @@ public class Stats {
     System.out.println(gcdER(3, 6));
     System.out.println(gcdER(6, 10));
     System.out.println(gcdER(1000, 870));
+	  	  System.out.println(gcdER(0, 870));
+	  System.out.println(gcdER(0, 0));
+	  System.out.println(gcdER(1000, 0));
+	  System.out.println(gcdER(-100, 870));
+	  System.out.println(gcdER(0, -44));
     System.out.println("gcdEW test:");
     System.out.println(gcdEW(3, 3));
     System.out.println(gcdEW(3, 6));
