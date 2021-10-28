@@ -127,6 +127,30 @@ public class Stats {
         return b;
      }
   }
+	
+  public static int gcdERA(int a, int b) {
+	  if ((a < 0 || b < 0) || (b == 0 && a == 0)) {
+      System.out.print("Error: Invalid input(s) -> ");
+      return 0;
+    }
+    if (a == 0) { return b; }
+    if (b == 0) { return a; }
+
+
+    if (a == b) { 
+      return a;
+    }
+    else {
+      if (a < b) {
+        b = b - a;
+        return gcdERA(a, b);
+      }
+      else {
+        a = a - b;
+        return gcdERA(a, b);
+      }
+    }
+  }
   
   public static int gcdEW(int a, int b) {
      while (a > 0 && b > 0){
@@ -160,5 +184,14 @@ public class Stats {
     System.out.println(gcdEW(3, 6));
     System.out.println(gcdEW(6, 10));
     System.out.println(gcdEW(1000,870));
+	      System.out.println(gcdERA(3, 3));
+    System.out.println(gcdERA(3, 6));
+    System.out.println(gcdERA(6, 10));
+    System.out.println(gcdERA(1000, 870));
+	  System.out.println(gcdERA(0, 870));
+	  System.out.println(gcdERA(0, 0));
+	  System.out.println(gcdERA(1000, 0));
+	  System.out.println(gcdERA(-100, 870));
+	  System.out.println(gcdERA(0, -44));
   }
 }
