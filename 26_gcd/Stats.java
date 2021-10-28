@@ -51,11 +51,9 @@ public class Stats {
      while (a > 0 && b > 0){
         if (a < b){
            b = b % a;
-        }
-        if (a > b){
+        }else if (a > b){
            a = a % b;
-        }
-        else{
+        }else{
            return a;
         }
      }
