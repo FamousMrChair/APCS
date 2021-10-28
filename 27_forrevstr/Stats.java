@@ -1,4 +1,4 @@
-public class Stats {
+public class Rof {
   public static String fenceF(int posts){
   	String fence = "|";
   	for (int i = posts; i > 1; i -= 1){
