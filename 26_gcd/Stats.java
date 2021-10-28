@@ -3,7 +3,7 @@
    APCS
    HW26 -- GCD Three Ways
    2021-10-27
-   time spent: 0.5 hours
+   time spent: 1.5 hours
 **/
 
 /**
