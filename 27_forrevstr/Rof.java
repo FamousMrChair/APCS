@@ -8,7 +8,7 @@ public class Rof {
   }
   public static String reverseF(String s){
   	String p = "";
-  	for (int i = s.length(); i > 0; i -= 1){
+  	for (int i = s.length(); i >= 0; i -= 1){
   		p += s.substring(i);
   		}
   	return p;
