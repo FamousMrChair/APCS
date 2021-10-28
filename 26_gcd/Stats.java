@@ -41,14 +41,14 @@ public class Stats {
   public static int gcdER(int a, int b) {
      // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) modulus the smaller one (b)
      if (a > b && b > 0){
-        return gcdER(b, (a % b));
+        return gcdER(b, (a - b));
      // When b reaches 0, we return the other number (a)
      }else if(b == 0){
         return a;
      }
      // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) modulus the smaller one (b)
      else if (a < b && a > 0){
-        return gcdER(a, (b % a));
+        return gcdER(a, (b - a));
      // Then a will reach 0 first, so we return b.
      }else{
         return b;
@@ -58,9 +58,9 @@ public class Stats {
   public static int gcdEW(int a, int b) {
      while (a > 0 && b > 0){
         if (a < b){
-           b = b % a;
+           b = b - a;
         }else if (a > b){
-           a = a % b;
+           a = a - b;
         }else{
            return a;
         }
