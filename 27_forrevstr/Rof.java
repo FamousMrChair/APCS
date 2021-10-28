@@ -18,6 +18,8 @@ public class Rof {
       return s.substring(s.length()-1,s.length) + reverseR(s.substring(0,s.length()-1));
     } else{
       return s;
+    }
+  }
   public static void main(String[] args){
   	System.out.println(fenceF(3));
   	System.out.println(fenceF(0));
