@@ -8,6 +8,9 @@
 
 /**
    DISCO:
+   When finding the GCD of a pair of numbers, the GCD for that pair is the same GCD for the smaller number of the pair and the bigger number modulus the
+   smaller number. Therefore, we can find the GCD of a pair of numbers if we keep replacing the bigger number of the pair with the bigger number modulus the
+   smaller one, until we get zero for one of the numbers. The other number will be our gcd.
    QCC:
 **/
 
@@ -36,12 +39,17 @@ public class Stats {
     return g;
   }
   public static int gcdER(int a, int b) {
-     if (a > b && b != 0){
+     // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) modulus the smaller one (b)
+     if (a > b && b > 0){
         return gcdER(b, (a % b));
+     // When b reaches 0, we return the other number (a)
      }else if(b == 0){
         return a;
-     }else if (a < b && a != 0){
+     }
+     // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) modulus the smaller one (b)
+     else if (a < b && a > 0){
         return gcdER(a, (b % a));
+     // Then a will reach 0 first, so we return b.
      }else{
         return b;
      }
