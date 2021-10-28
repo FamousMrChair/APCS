@@ -6,12 +6,12 @@ public class Rof {
   		}
   	return fence;
   }
-  public static int reverseF(String s){
+  public static String reverseF(String s){
   	String p = "";
   	for (int i = s.length(); i > 0; i -= 1){
-  		p += s.substring(i-1);
+  		p += s.substring(i);
   		}
-  	return s.length();
+  	return s.substring(1);
   }
   public static void main(String[] args){
   	System.out.println(fenceF(3));
