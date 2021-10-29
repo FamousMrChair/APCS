@@ -1,4 +1,4 @@
-/* Team Sigma : Kevin Xiao + Mr. Swag, Ariella Katz + 
+/* Team Sigma : Kevin Xiao + Mr. Swag, Ariella Katz + , Alif Rahman + Griipy
 APCS
 HW 27- FOR the Love of Strings
 2021-10-28
