@@ -1,3 +1,20 @@
+/* Team Sigma : Kevin Xiao + Mr. Swag, Ariella Katz + Tom, Alif Rahman + Grippy
+APCS
+HW 27- FOR the Love of Strings
+2021-10-28
+Time spent: 0.5 hours
+
+DISCO:
+String.length() can be used to find the length of a string.
+For loops needs three pre-conditions when initializing, first is initializing the varibale, then is the boolean expression for it to run, and then finally
+is the change in the initial variable.
+String.substring() takes in two integer arguments, m and n, and returns all of the characters of the string between the mth and nth digit of the string.
+
+QCC:
+How would we use for loop to calculate sum of arithmetic or geometric series?
+
+*/
+
 public class Rof {
   public static String fenceF(int posts){
   	String fence = "|";
@@ -34,8 +51,5 @@ public class Rof {
     System.out.println(reverseR("tu madred"));
     System.out.println(reverseR("23"));
     System.out.println(reverseR("fr"));
-  	
-  	
-
   }
 }
