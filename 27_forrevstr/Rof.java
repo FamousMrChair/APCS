@@ -8,7 +8,7 @@ DISCO:
 String.length() can be used to find the length of a string.
 For loops needs three pre-conditions when initializing, first is initializing the varibale, then is the boolean expression for it to run, and then finally
 is the change in the initial variable.
-String.subset() takes in two integer arguments, m and n, and returns all of the characters of the string between the mth and nth digit of the string.
+String.substring() takes in two integer arguments, m and n, and returns all of the characters of the string between the mth and nth digit of the string.
 
 QCC:
 How would we use for loop to calculate sum of arithmetic or geometric series?
