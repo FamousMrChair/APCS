@@ -19,8 +19,8 @@ makeAbba("What", "Up") → "WhatUpUpWhat"
     System.out.println(helloName("Bob"));
     System.out.println(helloName("Alice"));
     System.out.println(helloName("X"));
-    System.out.println(makeabba("Hi", "Bye"));
-    System.out.println(makeabba("Yo", "Alice"));
-    System.out.println(makeabba("What", "Up"));
+    System.out.println(makeAbba("Hi", "Bye"));
+    System.out.println(makeAbba("Yo", "Alice"));
+    System.out.println(makeAbba("What", "Up"));
   }
 }
