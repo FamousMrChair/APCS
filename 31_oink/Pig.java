@@ -94,8 +94,8 @@ public class Pig
     /* YOUR TEST CALLS HERE */
     System.out.println(hasA("cat", "a"));
     System.out.println(hasA("cat", "p"));
-    System.out.println(hasA("a"));
-    System.out.println(hasA("p"));
+    System.out.println(isAVowel("a"));
+    System.out.println(isAVowel("p"));
   }//end main()
 
 }//end class Pig
