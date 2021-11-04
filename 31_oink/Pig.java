@@ -113,7 +113,6 @@ public class Pig
 	System.out.println(hasAVowel("zzz"));
 	System.out.println(allVowels("meatball"));
 	System.out.println(allVowels("soy de los eeuu"));
-	System.out.println(allVowels("soy de los eeuu"));
   }//end main()
 
 }//end class Pig
