@@ -60,9 +60,15 @@ public class Pig
     pre:  w != null
     post: countVowels("meatball") -> 3
     =====================================*/
-  //public static int countVowels( String w ) 
+  public static int countVowels( String w ) 
   {
-    /* YOUR IMPLEMENTATION HERE */
+    counter = 0;
+    for (int i = 0; i < w.length(); i += 1){
+      if (isAVowel(w.substring(i,i+1)) == true){
+        counter += 1;
+      }
+    }
+    return counter;
   }
 
 
@@ -96,6 +102,7 @@ public class Pig
     System.out.println(hasA("cat", "p"));
     System.out.println(isAVowel("a"));
     System.out.println(isAVowel("p"));
+    System.out.println(countVowels("meatball"));
   }//end main()
 
 }//end class Pig
