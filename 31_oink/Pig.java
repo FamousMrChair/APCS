@@ -5,7 +5,6 @@ HW31 -- Otnay Ybay ethay Airhay Onway Ymay Inneechay Inchay Inchay
 2021-11-03
 time spent: 0.5
 */
-
 /*
 DISCO:
 - Makes things way easier if previously coded methods are called upon.
@@ -14,14 +13,11 @@ DISCO:
 QCC:
 - Why is final useful in this case?
 */
-
 public class Pig
 {
 //Q: How does this initialization make your life easier?
 //A: Can be used as a comparison; we don't need to keep writing out the vowels.
   private static final String VOWELS = "aeiou";
-
-
   /*=====================================
     boolean hasA(String,String) -- checks for a letter in a String
     pre:  w != null, letter.length() == 1
@@ -69,8 +65,6 @@ public class Pig
 		return v;
 	}
   }
-
-
   /*=====================================
     boolean hasAVowel(String) -- tells whether a String has a vowel
     pre:  w != null
@@ -89,8 +83,6 @@ public class Pig
 		return false;
 	}
 }
-
-
   /*=====================================
     String allVowels(String) -- returns vowels in a String
     pre:  w != null
@@ -109,7 +101,6 @@ public class Pig
 		return v;
 	}
   }
-
   public static void main( String[] args ){
 	System.out.println(hasA("cat", "a"));
 	System.out.println(hasA("cat", "p"));
@@ -122,5 +113,4 @@ public class Pig
 	System.out.println(allVowels("meatball"));
 	System.out.println(allVowels("soy de los eeuu"));
   }//end main()
-
 }//end class Pig
