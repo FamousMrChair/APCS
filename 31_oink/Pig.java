@@ -49,9 +49,9 @@ public class Pig
     boolean isAVowel(String) -- tells whether a letter is a vowel
     precondition: letter.length() == 1
     =====================================*/
-  //public static boolean isAVowel( String letter ) 
+  public static boolean isAVowel( String letter ) 
   {
-    /* YOUR IMPLEMENTATION HERE */
+    return hasA(VOWELS, letter);
   }
 
 
