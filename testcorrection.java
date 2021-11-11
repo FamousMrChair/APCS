@@ -4,7 +4,7 @@ public class testcorrection {
   public static String(int m){
     int m = (int)(x+y+x/y - x * y -x / (10*y));
     System.out.println(m);
-    return m
+    return m;
   }
   public static void main(String[] args){
     
