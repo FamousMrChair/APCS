@@ -30,12 +30,12 @@ public class Loopier {
   public static int linSearchR(int[] a, int target) {
     int[] array = new int[a.length - 1];
     if (a[a.length-1] != target) {
-      for (int i = 0; i < array.length - 1; i++){
+      for (int i = array.length-1; i >0; i-=1){
         array[i] = a[i];
       }
       return linSearchR(array, target);
     } else if (a[a.length-1] == target){
-      return a.length;
+      return a.length-1;
     } else{
       return -1;
     }
