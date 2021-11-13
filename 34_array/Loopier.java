@@ -35,8 +35,9 @@ public class Loopier {
       }
       return linSearchR(array, target);
     } else if (a[a.length-1] == target){
-      return a.length-1;
       System.out.println("Hello hello!");
+      return a.length-1;
+      
     } else{
       return -1;
     }
