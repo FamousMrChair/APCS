@@ -33,7 +33,7 @@ public class Loopier {
       for (int i = array.length-1; i >0; i-=1){
         array[i] = a[i];
       }
-      if (a.length == 0){
+      if (a.length == 1){
         return -1;
       }
       return linSearchR(array, target);
