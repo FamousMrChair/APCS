@@ -56,12 +56,12 @@ public class Loopier {
 
   public static int freqR(int[] a, int target) {
     int[] array = new int[a.length -1];
-    for (int i = array.length; i > 0; i-=1){
+    for (int i = array.length-1; i > 0; i-=1){
         array[i] = a[i];
       }
     if (a[a.length-1] == target) {
       return freqR(array, target) + 1;
-    } else if (a[a.length-1] != target && a.length >0){
+    } else if (a[a.length-1] != target && a.length >1){
       return freqR(array,target);
     } else {
       return 0;
@@ -80,7 +80,7 @@ public class Loopier {
     System.out.println(linSearchR(banana, 6));
     System.out.println(linSearchR(apple, 1));
     System.out.println(freqR(apple, 5));
-    System.out.println(freqR(apple, 1));
+    System.out.println(freqR(apple, 2));
     System.out.println(freqR(banana, 6));
     System.out.println(freq(apple, 4));
   }
