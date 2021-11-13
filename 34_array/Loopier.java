@@ -78,6 +78,9 @@ public class Loopier {
     System.out.println(linSearchR(apple, 8));
     System.out.println(linSearchR(banana, 6));
     System.out.println(linSearchR(apple, 1));
+    System.out.println(freqR(apple, 5));
+    System.out.println(freqR(apple, 1));
+    System.out.println(freqR(banana, 6));
     System.out.println(freq(apple, 4));
   }
 }
