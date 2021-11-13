@@ -34,8 +34,10 @@ public class Loopier {
         array[i] = a[i];
       }
       return linSearchR(array, target);
-    } else{
+    } else if (a[a.length-1] == target){
       return a.length;
+    } else{
+      return -1;
     }
   }
 
