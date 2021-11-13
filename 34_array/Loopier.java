@@ -29,7 +29,7 @@ public class Loopier {
 
   public static int linSearchR(int[] a, int target) {
     int[] array = new int[a.length - 1];
-    if (a[a.length] != target) {
+    if (a[a.length-1] != target) {
       for (int i = 0; i < array.length - 1; i++){
         array[i] = a[i];
       }
