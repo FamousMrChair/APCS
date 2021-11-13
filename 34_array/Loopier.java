@@ -26,7 +26,6 @@ public class Loopier {
     }
     return -1;
   }
-  private static int index = -1;
   public static int linSearchR(int[] a, int target) {
     int[] array = new int[a.length - 1];
     if (a[a.length-1] != target && a.length > 1) {
@@ -58,16 +57,19 @@ public class Loopier {
     return count;
   }
 
-  /*
-  under construction
   public static int freqR(int[] a, int target) {
     int count = 0;
-    if (a[i] == target) {
-      count++;
+    int[] array = new int[a.length -1];
+    for (int i = array.length-1; i > 0; i-=1{
+        array[i] = a[i];
+      }
+    if (a[a.length-1] == target && a.length > 1) {
+      return freqR(array, target) + 1;
+    } else{
+      return freqR(array,target);
     }
-    return(count);
   }
-  */
+
 
   public static void main(String[] args) {
     int[] a = new int[7];
