@@ -66,7 +66,7 @@ public class Loopier {
   public static void main(String[] args) {
     int[] a = new int[7];
     int[] apple = {1,2,4,5,3,6,7,2,1};
-    int[] banana = {1,2,3,4,5}
+    int[] banana = {1,2,3,4,5};
     System.out.println(stringify(arrayGen(a)));
     System.out.println(linSearch(apple, 3));
     System.out.println(linSearchR(apple, 5));
