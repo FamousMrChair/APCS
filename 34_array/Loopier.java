@@ -27,15 +27,17 @@ public class Loopier {
     return -1;
   }
 
-  /*
-  under construction
   public static int linSearchR(int[] a, int target) {
-    int[] array = new int[a.length - 2];
-    if (a[0] == target) {
-      return
+    int[] array = new int[a.length - 1];
+    if (a[a.length] != target) {
+      for (int i = 0; i < array.length - 1; i++){
+        array[i] = a[i];
+      }
+      return linSearchR(array, target);
+    } else{
+      return a.length;
     }
   }
-  */
 
   public static int freq(int[] a, int target) {
     int count = 0;
