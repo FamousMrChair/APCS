@@ -55,15 +55,16 @@ public class Loopier {
   }
 
   public static int freqR(int[] a, int target) {
-    int count = 0;
     int[] array = new int[a.length -1];
     for (int i = array.length-1; i > 0; i-=1){
         array[i] = a[i];
       }
-    if (a[a.length-1] == target && a.length > 1) {
+    if (a[a.length-1] == target) {
       return freqR(array, target) + 1;
-    } else{
+    } else if (a[a.lentgh-1] != target && a.length >1){
       return freqR(array,target);
+    } else {
+      return 0;
     }
   }
 
