@@ -28,6 +28,7 @@ public class Loopier {
   }
 
   public static int linSearchR(int[] a, int target) {
+    int index;
     int[] array = new int[a.length - 1];
     if (a[a.length-1] != target && a.length > 1) {
       for (int i = array.length-1; i >0; i-=1){
@@ -41,7 +42,7 @@ public class Loopier {
         array[i] = a[i];
       }
       return linSearchR(array, target);
-    } else if (int index >= 0){
+    } else if (index >= 0){
       return index;
     } else {
       return -1;
