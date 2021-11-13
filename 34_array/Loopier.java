@@ -65,7 +65,7 @@ public class Loopier {
     int[] apple = {1,2,4,5,3,6,7,2,1};
     System.out.println(stringify(arrayGen(a)));
     System.out.println(linSearch(apple, 3));
-    //System.out.println(linSearchR(apple, 5));
+    System.out.println(linSearchR(apple, 5));
     System.out.println(freq(apple, 4));
   }
 }
