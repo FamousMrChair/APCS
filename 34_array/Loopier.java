@@ -32,7 +32,7 @@ public class Loopier {
   public static int helper(int[] a, int target, boolean condition){
       if (a.length > 1 && condition == false){
         int[] array = new int[a.length-1];
-          for (int i = array.length-1; i >0; i-=1){
+          for (int i = 0; i < array.length-1 ; i+=1){
             array[i] = a[i+1];
           }
         if (a[0] != target) {
