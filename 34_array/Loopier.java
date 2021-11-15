@@ -42,7 +42,7 @@ public class Loopier {
         } else{
           return helper(array,target,false,counter);
         }
-      } else if (a.length < 1 && condition == false){
+      } else if (a.length <= 1 && condition == false){
         return -counter;
       } else{
         return 0;
