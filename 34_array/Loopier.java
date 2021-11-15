@@ -35,7 +35,7 @@ public class Loopier {
           for (int i = 0; i < array.length-1 ; i+=1){
             array[i] = a[i+1];
           }
-        if (a[0] != target) {
+        if (a[0] != target && a.length > 2) {
           return helper(array,target,false) + 1;
         } else if (a[0] == target){
           return helper(array,target,true);
