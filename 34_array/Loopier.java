@@ -29,23 +29,19 @@ public class Loopier {
   public static int linSearchR(int[] a, int target) {
       return helper(a, target, false);
   }
-  public static int helper(int[] a, int target, boolean condition){
+  public static int helper(int[] a, int target, boolean condition,int counter){
       if (a.length > 1 && condition == false){
         int[] array = new int[a.length-1];
           for (int i = 0; i < array.length-1 ; i+=1){
             array[i] = a[i+1];
           }
-        if (a[0] != target && a.length > 2) {
-          return helper(array,target,false) + 1;
-        } else if (a[0] == target){
-          return helper(array,target,true);
+        if (a[0] != target) {
+          return helper(array,target,false, counter += 1) + 1;
         } else{
-          System.out.println("Hello");
-          return helper(array,target,false);
+          return helper(array,target,true, counter);
         }
       } else if (a.length < 1 && condition == false){
-        System.out.println("Hello");
-        return -1;
+        return -counter-1;
       } else{
         return 0;
       }
