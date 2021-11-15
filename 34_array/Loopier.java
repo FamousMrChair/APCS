@@ -87,5 +87,6 @@ public class Loopier {
     System.out.println(freqR(apple, 2));
     System.out.println(freqR(banana, 6));
     System.out.println(freq(apple, 4));
+    System.out.println(freqR(apple,1));
   }
 }
