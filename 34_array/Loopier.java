@@ -27,22 +27,26 @@ public class Loopier {
     return -1;
   }
   public static int linSearchR(int[] a, int target) {
-    int[] array = new int[a.length - 1];
-    if (a[a.length-1] != target && a.length > 1) {
-      for (int i = array.length-1; i >0; i-=1){
-        array[i] = a[i];
-      }
-      return linSearchR(array, target);
-    } else if (a[a.length-1] == target){
-      System.out.println("Hello!");
-      for (int i = array.length-1; i >0; i-=1){
-        array[i] = a[i];
-      }
-      return linSearchR(array, target);
-    } else {
-      return -1;
-    }
+      return helper(a, target, false)
   }
+  public static int helper(int[] a, int target, boolean condition){
+      if (a.length > 1 && condition == false){
+        int[] array = new int[a.length-1];
+          for (int i = array.length-1; i >0; i-=1){
+            array[i] = a[i+1];
+          }
+        if (a[0] != target) {
+          return helper(array,target,false) + 1;
+        } else if (a[0] == target){
+          return helper(array,target,true);
+        } 
+      } else if (a.length < 1 && condition == false){
+        return -1;
+      } else{
+        return 0;
+      }
+  }
+  
 
   public static int freq(int[] a, int target) {
     int count = 0;
