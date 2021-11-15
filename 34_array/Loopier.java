@@ -37,9 +37,11 @@ public class Loopier {
           }
         if (a[0] != target) {
           return helper(array,target,false) + 1;
-        } else{
+        } else if (a[0] == target){
           return helper(array,target,true);
-        } 
+        } else{
+          return helper(array,target,false);
+        }
       } else if (a.length < 1 && condition == false){
         return -1;
       } else{
