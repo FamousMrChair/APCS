@@ -65,7 +65,7 @@ public class Loopier {
       } else if (a[a.length-1] != target){
         return freqR(array,target);
       } else if (a[0] == target){
-        return freqR(array,target);
+        return freqR(array,target) + 1;
       }
         else {
         return 0;
