@@ -1,3 +1,18 @@
+/*
+NIWWD: Kevin Xiao + Mr. Swag, Jun Hong Wang, Jomin Zhao
+APCS
+HW34 -- A Pirate's life for me
+2021-11-14
+time spent: 3 hours
+*/
+/*
+DISCO:
+- Helper function helps create more parameters to solve different test cases.
+- array[index] returns the value of the index of that array.
+QCC:
+- How would you compare arrays?
+- How would you use arrays to parse through websites? (We used lists to do this in python)
+*/
 public class Loopier {
   public static int[] arrayGen(int[] a) {
     for (int i = 0; i <= a.length - 1; i++) {
