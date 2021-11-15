@@ -27,7 +27,7 @@ public class Loopier {
     return -1;
   }
   public static int linSearchR(int[] a, int target) {
-      return helper(a, target, false,0);
+      return helper(a, target, false,1);
   }
   public static int helper(int[] a, int target, boolean condition,int counter){
       if (a.length > 1 && condition == false){
@@ -41,7 +41,7 @@ public class Loopier {
           return helper(array,target,true, counter);
         }
       } else if (a.length < 1 && condition == false){
-        return -counter-1;
+        return -counter;
       } else{
         return 0;
       }
