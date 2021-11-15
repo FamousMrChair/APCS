@@ -40,9 +40,11 @@ public class Loopier {
         } else if (a[0] == target){
           return helper(array,target,true);
         } else{
+          System.out.println("Hello");
           return helper(array,target,false);
         }
       } else if (a.length < 1 && condition == false){
+        System.out.println("Hello");
         return -1;
       } else{
         return 0;
