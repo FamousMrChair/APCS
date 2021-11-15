@@ -27,7 +27,7 @@ public class Loopier {
     return -1;
   }
   public static int linSearchR(int[] a, int target) {
-      return helper(a, target, false);
+      return helper(a, target, false,0);
   }
   public static int helper(int[] a, int target, boolean condition,int counter){
       if (a.length > 1 && condition == false){
