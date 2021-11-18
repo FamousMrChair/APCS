@@ -3,9 +3,10 @@ Team Gamma Ray: Kevin Xiao + Mr. Swag, Jun Hong Wang, Jomin Zhao
 APCS
 HW38- slots
 2021-11-17
-time spent:
-DISCO:
-QCC:
+time spent:0.5 hours
+DISCO: You can use typecasting to force the machine to do what you want, makes your code much easier to produce.
+
+QCC: Does a lottery machine have a set winning combo, or is any triplet of matching a jackpot? 
  *****************************************************/
 
 public class Slots {
@@ -105,7 +106,7 @@ public class Slots {
   public boolean jackpot()
   {
     boolean retBoo = false;
-    retBoo = _fruits[0].equals("lemon") && _fruits[1].equals("lemon") && _fruits[2].equals("lemon");
+    retBoo = _fruits[0] == ("lemon") && _fruits[1] == ("lemon") && _fruits[2] == ("lemon");
     return retBoo;
   }
   
