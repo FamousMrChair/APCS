@@ -37,7 +37,7 @@ public class Slots {
   public Slots()
   {
     //allocate memory for _fruits based on size of FRUITS:
-    _fruits = new String[_fruits.length];
+    _fruits = new String[FRUITS.length];
 
     //copy elements of FRUITS into _fruits:
     for (int i = 0; i < FRUITS.length; i++) {
