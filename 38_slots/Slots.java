@@ -81,16 +81,17 @@ public class Slots {
     pre:  _fruits array exists
     post: randomized order of elements in _fruits array
     =====================================*/
-    /*
+  
   public void spinOnce()
   {
     // A simple approach to shuffling:
     // iterate through the array, swapping
     // the val at each index with a randomly chosen other index
-    for(  )
-      swap(  );
+    for(int i = 0; i < _fruits.length; i++)
+      int random = (int) (Math.random() * (_fruits.length-1));
+      swap(i,random);
   }
-  */
+  
 
   /*=====================================
     boolean jackpot() -- checks for a winning combo
