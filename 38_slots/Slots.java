@@ -70,7 +70,7 @@ public class Slots {
     
   private void swap( int i, int j )
   {
-  string er = _fruits[i];
+  String er = _fruits[i];
   _fruits[i] = _fruits[j];
   _fruits[j] = er;
   }
