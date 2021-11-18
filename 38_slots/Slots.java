@@ -101,13 +101,16 @@ public class Slots {
     post: returns true if first 3 slots represent winning combo,
     false otherwise
     =====================================*/
-    /*
+  
   public boolean jackpot()
   {
     boolean retBoo = false;
+    if (_fruits[0] == lemon && _fruits[1] == lemon && _fruits[2] == lemon){
+      return true;
+    }
     return retBoo;
   }
-  */
+  
 
 
   /*=====================================
