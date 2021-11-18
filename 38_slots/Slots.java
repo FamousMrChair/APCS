@@ -15,13 +15,14 @@ public class Slots {
     "lime", "lime", "lime",
     "lemon", "lemon", "lemon",
     "cherry", "cherry", "cherry",
-    /*
-      add extra fruits until your heart is content...
-      Some suggestions:
     "orange", "orange", "orange",
     "grapefruit", "grapefruit", "grapefruit",
     "tangerine", "tangerine", "tangerine",
     "ugli", "ugli", "ugli",
+    /*
+      add extra fruits until your heart is content...
+      Some suggestions:
+
     */
     "peach", "peach", "peach"
   };
