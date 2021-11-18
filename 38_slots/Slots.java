@@ -132,7 +132,7 @@ public class Slots {
     Slots machine02 = new Slots();
     System.out.println(machine01.toString());
 
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
     //test to verify slot machines function indepently
     System.out.println();
     System.out.println( "Machine01 initial state:\t" + machine01 );
@@ -143,6 +143,7 @@ public class Slots {
     System.out.println( "Machine01 state:\t" + machine01 );
     System.out.println( "Machine02 state:\t" + machine02 );
     System.out.println();
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //test gamble-until-you-win mechanism
     System.out.println( "Preparing to spin until a mini win! . . ." );
     System.out.println( "------------------------------------" );
