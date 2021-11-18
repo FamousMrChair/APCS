@@ -5,9 +5,9 @@ HW38- slots
 2021-11-17
 time spent:0.5 hours
 DISCO: You can use typecasting to force the machine to do what you want, makes your code much easier to produce.
-You can use the == sign or the .equals sign when comparing strings of an array.
 
 QCC: Does a lottery machine have a set winning combo, or is any triplet of matching a jackpot? 
+Why can you use the == sign when comparing the array indices to strings?
  *****************************************************/
 
 public class Slots {
