@@ -105,9 +105,7 @@ public class Slots {
   public boolean jackpot()
   {
     boolean retBoo = false;
-    if (_fruits[0].equals("lemon") && _fruits[1].equals("lemon") && _fruits[2].equals("lemon")){
-      return true;
-    }
+    retBoo = _fruits[0].equals("lemon") && _fruits[1].equals("lemon") && _fruits[2].equals("lemon");
     return retBoo;
   }
   
@@ -120,13 +118,13 @@ public class Slots {
     or if first 3 slots mutually distinct,
     false otherwise
     =====================================*/
-    /*
+
   public boolean miniWin()
   {
-    boolean retBoo = ?
+    boolean retBoo = false;
+    retBoo = jackpot() == true || (_fruits[0] != _fruits[1] && _fruits[1] != _fruits[2] && _fruits[2] != _fruits[0]);
     return retBoo;
   }
-*/
 
 
   //main() method for testing
@@ -151,7 +149,7 @@ public class Slots {
     //test gamble-until-you-win mechanism
     System.out.println( "Preparing to spin until a mini win! . . ." );
     System.out.println( "------------------------------------" );
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
     //if you haven't won, spin again until you win!
     while( machine01.miniWin() == false ) {
       System.out.println( "Your spin..." + "\t" + machine01 );
@@ -172,6 +170,7 @@ public class Slots {
     System.out.println( "====================================" );
     System.out.println( "Your spin..." + "\t" + machine01 );
     System.out.println( "JACKPOT!\n" );
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }//end main
 
