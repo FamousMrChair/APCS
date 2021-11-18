@@ -87,9 +87,10 @@ public class Slots {
     // A simple approach to shuffling:
     // iterate through the array, swapping
     // the val at each index with a randomly chosen other index
-    for(int i = 0; i < _fruits.length; i++)
+    for(int i = 0; i < _fruits.length; i++){
       int random = (int) (Math.random() * (_fruits.length-1));
       swap(i,random);
+    }
   }
   
 
