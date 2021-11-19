@@ -1,0 +1,31 @@
+Compile-time errors: Syntax is wrong; i.e. omitting semicolon at the end of a statement
+Run-time errors: Something goes wrong while program is running; i.e. an infinite loop from recursion
+Logic errors: cause the program to do the wrong thing.
+
+FIX ERRORS ONE AT A TIME!
+
+Check for common syntax errors:
+Parentheses, uppercase/lowercase, semicolons, quotation, declare type, method invocation, invoking instance method, and invoking non-static within static.
+
+Debugging by disection:
+Take code apart piece by piece to figure out where the bug is; delete half of the code at a time.
+
+Don't let the compiler lead you by the nose.
+
+If a program stops, we call it "hanging." This results from an infinite loop or recursive method.
+Infinite recursion causes a StackOverflowError.
+Add print statements to the beginning and ending of the methods to check where the bug is.
+
+NullPointerException: trying to access a variable or invoke object that is null.
+
+Make concise and clear flowcharts to fix logic errors! Break the program into components and test them independently.
+
+Integer division always round to zero.
+Inheritance can lead to subtle logic errors.
+
+Rewrite code into simpler versions of itself (although more elaborate) so it is easier to find bugs.
+Use temporary variables!
+
+When stuck: take a break!
+If REALLY stuck: explain to rubber duck!
+If REALLY REALLY REALLY REALLY stuck: ask someone else to look over your code!
