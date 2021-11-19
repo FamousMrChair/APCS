@@ -22,7 +22,7 @@ This is an ugly process, but is fast and reliable.
 Don't let the compiler lead you by the nose.
 
 Run-time errors:
-If a program stops, we call it "hanging." This results from an infinite loop or recursive method.
+If a program stops and seems to do nothing, we call it "hanging." This results from an infinite loop or recursive method.
 Infinite recursion causes a StackOverflowError.
 Add print statements to the beginning and ending of the methods to check where the bug is.
 
