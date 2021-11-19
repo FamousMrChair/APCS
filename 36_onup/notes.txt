@@ -3,7 +3,7 @@ Kevin Xiao + Mr. Swag
 APCS
 HW36 -- All Quacked Up
 2021-11-18
-time spent: 0.5 hrs
+time spent: 1 hrs
 */
 Compile-time errors: Syntax is wrong; i.e. omitting semicolon at the end of a statement
 Run-time errors: Something goes wrong while program is running; i.e. an infinite loop from recursion
