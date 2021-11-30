@@ -51,12 +51,18 @@ public class TwoDimArray
 
 
   //postcond: returns sum of all items in 2D int array a
-  /*
+  
   public static int sum1( int[][] a )
   {
     // YOUR IMPLEMENTATION HERE
+    int output = 0;
+    for (int x = 0; x <  a.length; x++) {
+      for (int y = 0; y < a[x].length; y++) {
+        output += a[x][y];
+      }
+    }
+    return output;    
   }
-  */
 
 
   //postcond: returns sum of all items in 2D int array a
@@ -101,11 +107,11 @@ public class TwoDimArray
       print2(m1);
       print2(m2);
       print2(m3);
-      /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       System.out.print("testing sum1...\n");
       System.out.println("sum m1 : " + sum1(m1));
       System.out.println("sum m2 : " + sum1(m2));
       System.out.println("sum m3 : " + sum1(m3));
+      /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       System.out.print("testing sum2...\n");
       System.out.println("sum m1 : " + sum2(m1));
       System.out.println("sum m2 : " + sum2(m2));
