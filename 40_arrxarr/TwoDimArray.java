@@ -36,10 +36,10 @@ public class TwoDimArray
       for (int y: x) {
         if (y == 0) {
           output += x[y];
-          System.out.println("test1")
+          System.out.println("test1");
         } else {
           output += ", " + x[y];
-          System.out.println("test2")
+          System.out.println("test2");
         }
       }
       output += "\n";
