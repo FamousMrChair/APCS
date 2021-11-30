@@ -33,7 +33,7 @@ public class TwoDimArray
     // YOUR IMPLEMENTATION HERE
     String output = "";
     for (int[] x: a) {
-      for (int y: x) {
+      for (int y-1: x) {
         if (y == 0) {
           output += x[y];
         } else {
