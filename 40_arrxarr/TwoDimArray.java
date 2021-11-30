@@ -67,12 +67,17 @@ public class TwoDimArray
 
   //postcond: returns sum of all items in 2D int array a
   //          * uses helper fxn sumRow
-  /*
+  
   public static int sum2( int [][] m )
   {
     // YOUR IMPLEMENTATION HERE
+    int output = 0;
+    for (int x = 0; x < m.length; x++){
+      output += sumRow(x, m);
+    }
+    return output;
   }
-  */
+  
 
   //postcond: returns sum of all items on row r of 2D int array a
   //          uses a FOR loop
@@ -95,14 +100,18 @@ public class TwoDimArray
 
   //postcond: returns sum of all items on row r of 2D int array a
   //          uses a FOREACH loop
-  /*
+  
   public static int sumRow2(int r, int[][] m)
   {
     // *** YOUR IMPLEMENTATION HERE ***
-    int summer = 0;
-    return summer;
+    int output = 0;
+    for (int y: m[r]){
+      output += m[r][y];
+    }
+    
+    return output;
   }
-  */
+  
 
 
   public static void main( String [] args )
@@ -120,12 +129,10 @@ public class TwoDimArray
       System.out.println("sum m1 : " + sum1(m1));
       System.out.println("sum m2 : " + sum1(m2));
       System.out.println("sum m3 : " + sum1(m3));
-      /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       System.out.print("testing sum2...\n");
       System.out.println("sum m1 : " + sum2(m1));
       System.out.println("sum m2 : " + sum2(m2));
       System.out.println("sum m3 : " + sum2(m3));
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     // your own custom test cases welcomed and encouraged
   }
