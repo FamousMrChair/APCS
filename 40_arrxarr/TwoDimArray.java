@@ -3,6 +3,7 @@
 // APCS pd6
 // HW40 -- 2D arrays
 // 2021-11-30
+// Time Spent: 0.75 hours
 */
 
 public class TwoDimArray
