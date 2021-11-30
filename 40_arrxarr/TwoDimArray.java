@@ -76,12 +76,20 @@ public class TwoDimArray
 
   //postcond: returns sum of all items on row r of 2D int array a
   //          uses a FOR loop
-  /*
+  
   public static int sumRow( int r, int[][] a )
   {
     // YOUR IMPLEMENTATION HERE
+    int output = 0;
+    for (int x = 0; x < a.length; x++){
+      if (x == r){
+       for (int y = 0; y < a[x].length; y++) {
+         output += a[x][y];
+       }
+      }
+    return output;
   }
-  */
+  
 
 
   //postcond: returns sum of all items on row r of 2D int array a
