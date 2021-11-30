@@ -35,11 +35,9 @@ public class TwoDimArray
     for (int[] x: a) {
       for (int y: x) {
         if (y == 0) {
-          output += x[y];
-          System.out.println("test1");
+          output += y;
         } else {
-          output += ", " + x[y];
-          System.out.println("test2");
+          output += ", " + y;
         }
       }
       output += "\n";
