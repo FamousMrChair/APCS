@@ -106,7 +106,7 @@ public class TwoDimArray
     // *** YOUR IMPLEMENTATION HERE ***
     int output = 0;
     for (int y: m[r]){
-      output += m[r][y];
+      output += y;
     }
     
     return output;
