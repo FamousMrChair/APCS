@@ -32,14 +32,17 @@ public class TwoDimArray
   {
     // YOUR IMPLEMENTATION HERE
     String output = "";
+    int counter = 0;
     for (int[] x: a) {
       for (int y: x) {
-        if (y == 0) {
+        if (counter == 0) {
           output += y;
         } else {
           output += ", " + y;
         }
+        counter += 1;
       }
+      counter = 0;
       output += "\n";
     }
     System.out.println(output);
