@@ -87,8 +87,8 @@ public class TwoDimArray
          output += a[x][y];
        }
       }
-    return output;
     }
+    return output;
   }
   
 
