@@ -73,7 +73,7 @@ public class TwoDimArray
     // YOUR IMPLEMENTATION HERE
     int output = 0;
     for (int x = 0; x < m.length; x++){
-      output += sumRow(x, m);
+      output += sumRow2(x, m);
     }
     return output;
   }
