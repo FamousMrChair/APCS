@@ -121,7 +121,7 @@ public class Rational {
       return 0;
     } else if (this.r < input.r) {
       return -1;
-    } else if (this.r > input.r) {
+    } else{
       return 1;
     }
   }
