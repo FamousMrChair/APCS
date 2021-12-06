@@ -124,9 +124,6 @@ public class Rational {
     } else if (this.r > input.r) {
       return 1;
     }
-    //this return statement has to be here because the if statement doesn't fully work
-    //the else if statements work, but not the if
-    return(0);
   }
   //end of new code
 
