@@ -74,6 +74,23 @@ public class Rational {
   //end of old code
 
   //beginning of new code
+  
+  public static int gcdER(int a, int b) {
+     // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) minus the smaller one (b)
+     if (a > b && b > 0){
+        return gcdER(b, (a - b));
+     // When b reaches 0, we return the other number (a)
+     }else if(b == 0){
+        return a;
+     }
+     // If a is our bigger number and both a and b are bigger than 0, we take the smaller number (b) and the bigger number (a) minus the smaller one (b)
+     else if (a < b && a > 0){
+        return gcdER(a, (b - a));
+     // Then a will reach 0 first, so we return b.
+     }else{
+        return b;
+     }
+  }
   public void add(Rational r) {
     n = (this.n * r.d) + (this.d * r.n);
     d = this.d * r.d;
