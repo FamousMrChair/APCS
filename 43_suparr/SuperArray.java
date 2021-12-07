@@ -35,34 +35,34 @@ public class SuperArray
     return str + "]";
   }
 
-/*
   //double capacity of SuperArray
   private void expand()
   {
-    /* YOUR IMPLEMENTATION HERE */
+    _size = _size * 2;
+    int[] _data2 = new int[_size]
+    for (int i = 0; i < data.length; i ++){
+      _data2[i] = _data[i];
+    }
+    _data = _data2;
+    
   }
-*/
-/*
   //accessor -- return value at specified index
   public int get( int index )
   {
-    /* YOUR IMPLEMENTATION HERE */
+    return _data[index];
   }
-*/
 
-/*
   //mutator -- set value at index to newVal,
   //           return old value at index
   public int set( int index, int newVal )
   {
-    /* YOUR IMPLEMENTATION HERE */
+    int i = 
+    _data[index] = newVal;
   }
-*/
-  /*
   //main method for testing
   public static void main( String[] args )
   {
-    /*~~~~~~~~move~me~down~~~~~~~~~~~~~~V~~~~~~~~
+    
       SuperArray curtis = new SuperArray();
       System.out.println( "Printing empty SuperArray curtis..." );
       System.out.println( curtis );
@@ -76,9 +76,9 @@ public class SuperArray
       System.out.println("Printing expanded SuperArray curtis...");
       System.out.println(curtis);
       }
+      /*~~~~~~~~move~me~down~~~~~~~~~~~~~~V~~~~~~~~
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~*/
   }//end main()
-*/
 
 
 }//end class
