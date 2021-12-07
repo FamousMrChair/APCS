@@ -1,19 +1,14 @@
-// Clyde "Thluffy" Sinclair
-// APCS1 pd0
-// HW44 -- expanding SuperArray functionality, encapsulation
-// 2021-12-08w
+/*
+Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
+APCS pd6
+HW 44- Array of Grade 316
+2021-12-08
+Time Spent : 0.5 hours
 
-/***************************
- * class SuperArray version 2.0
- * (SKELETON)
- * Wrapper class for array. Facilitates
- * resizing
- * expansion
- * read/write capability on elements
- * adding an element to end of array
- * adding an element at specified index
- * removing an element at specified index
- ***************************/
+DISCO:
+
+QCC:
+*/
 
 public class SuperArray
 {
