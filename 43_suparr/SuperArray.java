@@ -41,6 +41,7 @@ public class SuperArray
   {
     /* YOUR IMPLEMENTATION HERE */
   }
+*/
 /*
 
   //accessor -- return value at specified index
@@ -48,6 +49,7 @@ public class SuperArray
   {
     /* YOUR IMPLEMENTATION HERE */
   }
+*/
 
 /*
   //mutator -- set value at index to newVal,
