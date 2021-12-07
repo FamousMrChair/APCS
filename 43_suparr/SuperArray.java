@@ -40,7 +40,7 @@ public class SuperArray
   {
     _size = _size * 2;
     int[] _data2 = new int[_size];
-    for (int i = 0; i < data.length; i ++){
+    for (int i = 0; i < _data.length; i ++){
       _data2[i] = _data[i];
     }
     _data = _data2;
