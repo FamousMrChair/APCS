@@ -1,8 +1,22 @@
-// Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
-// APCS pd6
-// HW43 -- encapsulation (basic SuperArray functionality)
-// 2021-12-07
-// Time Spent :
+/*
+Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
+APCS pd6
+HW43 -- encapsulation (basic SuperArray functionality)
+2021-12-07
+Time Spent : 0.5 hours
+
+
+DISCO:
+You can modify values directly within superarrays by accessing its index.
+Size needs to change along with the size of the array.
+QCC:
+How would we differentiate between empty values and a zero?
+How would we implement left-justify?
+*/
+
+
+
+
 
 /***************************
  * class SuperArray
