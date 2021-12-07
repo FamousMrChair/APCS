@@ -28,11 +28,11 @@ public class SuperArray
   //output SuperArray in [a,b,c] format
   public String toString()
   {
-    String str = "";
+    String str = "[";
     for (int a: _data){
       str += a + ",";
     }
-    return str;
+    return str + "]";
   }
 
 /*
