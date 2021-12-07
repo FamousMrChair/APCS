@@ -56,8 +56,9 @@ public class SuperArray
   //           return old value at index
   public int set( int index, int newVal )
   {
-    int i = 
+    int i = _data[index];
     _data[index] = newVal;
+    return i;
   }
   //main method for testing
   public static void main( String[] args )
