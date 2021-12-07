@@ -43,7 +43,6 @@ public class SuperArray
   }
 */
 /*
-
   //accessor -- return value at specified index
   public int get( int index )
   {
@@ -59,6 +58,7 @@ public class SuperArray
     /* YOUR IMPLEMENTATION HERE */
   }
 */
+  /*
   //main method for testing
   public static void main( String[] args )
   {
@@ -78,6 +78,7 @@ public class SuperArray
       }
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~*/
   }//end main()
+*/
 
 
 }//end class
