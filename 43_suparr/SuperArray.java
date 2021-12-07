@@ -30,7 +30,7 @@ public class SuperArray
   {
     String str = "";
     for (int a: _data){
-      s += a + ",";
+      str += a + ",";
     }
     return str;
   }
