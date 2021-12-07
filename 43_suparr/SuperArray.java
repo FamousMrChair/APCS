@@ -35,13 +35,13 @@ public class SuperArray
     return str;
   }
 
-
+/*
   //double capacity of SuperArray
   private void expand()
   {
     /* YOUR IMPLEMENTATION HERE */
   }
-
+/*
 
   //accessor -- return value at specified index
   public int get( int index )
@@ -49,15 +49,14 @@ public class SuperArray
     /* YOUR IMPLEMENTATION HERE */
   }
 
-
+/*
   //mutator -- set value at index to newVal,
   //           return old value at index
   public int set( int index, int newVal )
   {
     /* YOUR IMPLEMENTATION HERE */
   }
-
-
+*/
   //main method for testing
   public static void main( String[] args )
   {
