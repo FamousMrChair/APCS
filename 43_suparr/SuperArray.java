@@ -39,7 +39,7 @@ public class SuperArray
   private void expand()
   {
     _size = _size * 2;
-    int[] _data2 = new int[_size]
+    int[] _data2 = new int[_size];
     for (int i = 0; i < data.length; i ++){
       _data2[i] = _data[i];
     }
