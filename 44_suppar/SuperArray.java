@@ -66,6 +66,9 @@ public class SuperArray
   {
     int temp = _data[index];
     _data[index] = newVal;
+    if (index > _size - 1){
+      _size ++;
+    }
     return temp;
   }
 
