@@ -70,6 +70,9 @@ public class SuperArray
   //adds an item after the last item
   public void add( int newVal )
   {
+    if(_size == _data.length){
+      expand();
+    }
     _data[_size] = newVal;
     _size += 1;
   }
@@ -78,6 +81,9 @@ public class SuperArray
   //inserts an item at index
   public void add( int index, int newVal )
   {
+    if (_size == _data.length){
+      expand();
+    }
     for (int i = index+1; i < _size; i ++){
       _data[i] = _data[i-1];
     }
