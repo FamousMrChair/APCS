@@ -5,7 +5,10 @@ HW 44- Array of Grade 316
 2021-12-08
 Time Spent : 0.5 hours
 
-DISCO:
+DISCO: When adding and shifting all of the values to the right of the addition to the right, our for loop needs to count backwards so that we don't lose the
+values of the ones closer to the index. I.e. if we want to add a 99 at index 3 and there is a 4 at index 3 already and a 5 at index 4, inserting the 99 will
+change both index 4 and 5 to 4 if we have a loop counting upwards from index. However, counting backwards will fix this error.
+We need to expand our array if the size of meaningful items in our array is the same as it.
 
 QCC:
 */
