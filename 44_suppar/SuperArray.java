@@ -84,7 +84,7 @@ public class SuperArray
     if (_size == _data.length){
       expand();
     }
-    for (int i = index+1; i < _size; i ++){
+    for (int i = _size; i > index; i --){
       _data[i] = _data[i-1];
     }
     _data[index] = newVal;
