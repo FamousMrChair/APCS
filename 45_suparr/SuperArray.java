@@ -77,7 +77,7 @@ public class SuperArray implements ListInt
   }
 
   //inserts an item at index
-  public void add( int index, int newVal )
+  public boolean add( int index, int newVal )
   {
     if (_size == _data.length){
       expand();
