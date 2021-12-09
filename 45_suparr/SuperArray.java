@@ -87,6 +87,7 @@ public class SuperArray implements ListInt
     }
     _data[index] = newVal;
     _size += 1;
+    return true;
   }
 
   //removes the item at index
