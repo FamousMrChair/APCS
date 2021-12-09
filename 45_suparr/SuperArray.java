@@ -158,5 +158,15 @@ public class SuperArray implements ListInt
       mayfield.add(1,77);
       System.out.println("Printing SuperArray mayfield post-insert...");
       System.out.println(mayfield);
+      
+      ListInt gamma = new ListInt();
+      for(int i = 0; i < gamma._data.length; i++){
+        gamma.set(i, i*2);
+      }
+      System.out.println(gamma.add(10));
+      System.out.println(gamma.add(3,5));
+      System.out.println(gamma.add(7,12));
+      System.out.println(gamma.get(7));
+      System.out.println(gamma.remove(5));
   }//end main()
 }//end class
