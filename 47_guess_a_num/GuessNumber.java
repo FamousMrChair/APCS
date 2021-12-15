@@ -103,6 +103,7 @@ public class GuessNumber
       } else if (guess > _target && guess <= _hi) {
         _hi = guess - 1;
         System.out.println("Too high");
+        _guessCtr ++;
       } else if (guess < _target && guess >= _lo) {
         _lo = guess + 1;
         System.out.println("Too low");
