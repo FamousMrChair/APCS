@@ -96,7 +96,7 @@ public class GuessNumber
 
       //3 cases: we either found it, too hi, too lo
       if (guess == _target) {
-        guessCtr ++;
+        _guessCtr ++;
         System.out.println("Correct! It took " + _guessCtr + " guesses");
         _guessCtr = 0;
         break;
