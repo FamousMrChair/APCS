@@ -1,29 +1,17 @@
+/*
+Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
+APCS pd6
+HW 45- Guess Again- Binary Search
+2021-12-15
+Time Spent : 0.5 hours
+DISCO: Binary search is the process of checking if a number is greater or smaller than a certain index of the domain, and then slowly restricting the
+domain of available indexes until we reach an index where we can insert our number. 
+The recursive method in implementing binary search was easier than the iterative version because with recursion, we could just employ a few if statements
+comparing our guess to the target and then calling on the method again recursively. 
 
-// Clyde "Thluffy" Sinclair
-// APCS pd0
-// HW47 -- ?
-// 2021-12-15w
-// time spent: _ hrs
-
-/***
- * class GuessNumber -- fun fun fun!
- *
- * SKELETON
- *
- * eg, sample interaction with end user:
- *
- * Guess a # fr 1-100: 50
- * Too high
- * Guess a # fr 1-49: 25
- * Too low
- * Guess a # fr 26-49: 38
- * Correct! It took 3 guesses
- ***/
-
-/***
-    DISCO:
-    QCC:
- ***/
+QCC:
+Is binary search more efficient or useful than linear search?
+*/
 import java.util.Scanner;
 
 public class GuessNumber
