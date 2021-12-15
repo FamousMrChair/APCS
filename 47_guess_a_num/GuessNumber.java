@@ -90,14 +90,13 @@ public class GuessNumber
   {
 
     int guess;
-    _guessCtr++;
-
     while( true ) {
       System.out.print("Guess a num bt " + _lo + " & " + _hi + ": ");
       guess = sc.nextInt();
 
       //3 cases: we either found it, too hi, too lo
       if (guess == _target) {
+        guessCtr ++;
         System.out.println("Correct! It took " + _guessCtr + " guesses");
         _guessCtr = 0;
         break;
@@ -107,8 +106,10 @@ public class GuessNumber
       } else if (guess < _target && guess >= _lo) {
         _lo = guess + 1;
         System.out.println("Too low");
+        _guessCtr ++;
       } else if (guess > _hi || guess < _lo) {
         System.out.println("Out of index");
+        _guessCtr ++;
       }
       /* YOUR CODE HERE */
 
