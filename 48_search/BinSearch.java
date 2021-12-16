@@ -119,7 +119,7 @@ public class BinSearch
     }
 
     printArray( iArr3 );
-    System.out.println( "iArr3 sorted? -- " + isSorted(iArr2) );
+    System.out.println( "iArr3 sorted? -- " + isSorted(iArr3) );
 
     //search for 6 in array
     System.out.println("testing: " + iArr2[2]);
