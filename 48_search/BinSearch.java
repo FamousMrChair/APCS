@@ -16,8 +16,8 @@ public class BinSearch
   {
     //uncomment exactly 1 of the 2 stmts below:
 
-    //return binSearchIter( a, target, 0, a.length-1 );
-    return binSearchRec( a, target, 0, a.length-1 );
+    return binSearchIter( a, target, 0, a.length-1 );
+    //return binSearchRec( a, target, 0, a.length-1 );
   }
 
 
@@ -46,25 +46,35 @@ public class BinSearch
 
 
 
-//  public static int binSearchIter( Comparable[] a,   Comparable target, int lo, int hi )
+public static int binSearchIter( Comparable[] a,   Comparable target, int lo, int hi )
   {
 
-  //  int tPos = -1; //init return var to flag value -1
-  //  int m = (lo + hi) / 2; //init mid pos var
+    int tPos = -1; //init return var to flag value -1
+    int m = (lo + hi) / 2; //init mid pos var
 
-//    while( /* ? */ ) { // run until lo & hi cross
-
+    while( lo < hi ) { // run until lo & hi cross
+	
       //update mid pos var
 
-      // target found
+	m = (lo + hi)/2
 
+      // target found
+	if (target.compareTo(a[m]) == 0){
+		return m;
+	}
       // value at mid index higher than target
+	if (target.compareTo(a[m]) > 0){
+		lo = m + 1;
+	}
 
       // value at mid index lower than target
+	if (target.compareTo(a[m]) < 0{
+		hi = m - 1;
+	}
 
     }
-//    return tPos;
-//  }//end binSearchIter
+    return tPos;
+  }//end binSearchIter
 
 
   //tell whether an array is sorted in ascending order
