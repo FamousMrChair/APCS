@@ -33,7 +33,7 @@ public class BinSearch
     {
       return m;
     }
-    else if (target.compareTo(a[m]) == 1) // Middle Number is smaller than target
+    else if (target.compareTo(a[m]) > 0) // Middle Number is smaller than target
     {
       return binSearchRec(a, target, m+1, hi);
     }
