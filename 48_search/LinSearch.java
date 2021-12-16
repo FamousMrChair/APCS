@@ -17,8 +17,11 @@ public class LinSearch
     int i = 0;
 
     while ( i < a.length ) {
-
-      
+       if (a[i] == target){
+          tPos = i;
+          break;
+       }
+       i ++;
     }
     return tPos;
   }
@@ -42,7 +45,7 @@ public class LinSearch
   //minimal -- augment as necessary
   public static void main ( String[] args )
   {
-    /*----------------------------------------------------
+    
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     System.out.println("\nNow testing linSearch on int array...");
     //Declare an array of Comparables and initialize it using ints
@@ -66,6 +69,7 @@ public class LinSearch
     System.out.println( linSearch(sArr,"watermelon") );
     //search for "lychee" in array
     System.out.println( linSearch(sArr,"lychee") );
+     /*----------------------------------------------------
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       ----------------------------------------------------*/
 
