@@ -56,7 +56,7 @@ public static int binSearchIter( Comparable[] a,   Comparable target, int lo, in
 	
       //update mid pos var
 
-	m = (lo + hi)/2
+	m = (lo + hi)/2;
 
       // target found
 	if (target.compareTo(a[m]) == 0){
@@ -68,7 +68,7 @@ public static int binSearchIter( Comparable[] a,   Comparable target, int lo, in
 	}
 
       // value at mid index lower than target
-	if (target.compareTo(a[m]) < 0{
+	if (target.compareTo(a[m]) < 0){
 		hi = m - 1;
 	}
 
