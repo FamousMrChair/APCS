@@ -1,7 +1,7 @@
 /*
 Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
 APCS pd6
-HW 45- Guess Again- Binary Search
+HW 47- Guess Again- Binary Search
 2021-12-15
 Time Spent : 0.5 hours
 DISCO: Binary search is the process of checking if a number is greater or smaller than a certain index of the domain, and then slowly restricting the
