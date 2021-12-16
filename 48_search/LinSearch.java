@@ -1,3 +1,14 @@
+/*
+Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
+APCS pd6
+HW 48- Search
+2021-12-16
+Time Spent : 0.5 hours
+DISCO: Binary search is more efficient than linear search.
+QCC:
+How to compile with unchecked or unsafe operations?
+*/
+
 /**
    class LinSearch
 **/
