@@ -31,18 +31,17 @@ public class BinSearch
     int m = (lo + hi) / 2; //init mid pos var
     if (target.compareTo(a[m]) == 0) // Middle Number and target are the same. This is the base case.
     {
-      tPos = m;
+      return m;
     }
     else if (target.compareTo(a[m]) == 1) // Middle Number is smaller than target
     {
-      binSearchRec(a, target, m, hi);
+      return binSearchRec(a, target, m+1, hi);
     }
     else // Middle Number is larger than target
     {
-      binSearchRec(a, target, lo, m);
+      return binSearchRec(a, target, lo, m-1);
     }
 
-    return tPos;
   }//end binSearchRec
 
 
