@@ -141,7 +141,9 @@ public class Rational {
   public boolean equals(Object input){
     if (input instanceof Rational){
       Rational r = (Rational) input;
-      return n * r.d - d * r.n;
+      if (n * r.d - d * r.n == 0){
+        return true;
+      }
     }
     return false;
   }
