@@ -137,11 +137,11 @@ public class BubbleSort
       glen2.add(5);
       glen2.add(12);
       glen2.add(3);
-      System.out.println( "ArrayList glen before sorting:\n" + glen );
+      System.out.println( "ArrayList glen before sorting:\n" + glen2 );
       ArrayList glenSorted = bubbleSort( glen2 );
       System.out.println( "sorted version of ArrayList glen:\n"
       + glenSorted );
-      System.out.println( "ArrayList glen after sorting:\n" + glen );
+      System.out.println( "ArrayList glen after sorting:\n" + glen2 );
 
       ArrayList coco2 = populate( 10, 1, 1000 );
       System.out.println( "ArrayList coco before sorting:\n" + coco2 );
