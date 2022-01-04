@@ -8,18 +8,21 @@
  *   class SelectionSort -- implements SelectionSort algorithm
  *
  * ALGO:
- * 
+ *
  * DISCO
  *
  * QCC
- * q0: How many passes to sort n elements?
- * a0: 
+ * q0: How many passes to sort n elements?(  ) {(  ) {
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
+
+ * a0:
  * q1: What do you know after pass p?
- * a1: 
+ * a1:
  * q2: How do you know if sorted?
  * a2:
  * q3: What does a pass boil down to?
- * a3: 
+ * a3:
  ******************************/
 
 
@@ -59,26 +62,30 @@ public class SelectionSort
 
   // VOID version of SelectionSort
   // Rearranges elements of input ArrayList
-  // postcondition: data's elements sorted in ascending order
+  // postcondition: d(  ) {
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
+ata's elements sorted in ascending order
   public static void selectionSortV( ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
 
     //maxPos will point to position of SELECTION (greatest value)
-    int maxPos;
-
-    for(  ) {
+    int maxPos = 0;
+    for(int i = 0; i < data.size()-1; i++  ) {
       System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
 
-      
-      for(  ) {
+
+      for(int n = 0; n < data.size()-1;n++  ) {
+        if (data.get(n) > data.get(maxPos)){
+          maxPos = i;
+        }
         System.out.println( "maxPos: " + maxPos );//diag
         System.out.println( data );//diag
 
-        
+
       }
 
-      
+
       System.out.println( "after swap: " +  data );//diag
     }
   }//end selectionSort
@@ -111,7 +118,8 @@ public class SelectionSort
     glen.add(7);
     glen.add(1);
     glen.add(5);
-    glen.add(12);
+    glen.add(12);(  ) {
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
     glen.add(3);
     System.out.println( "ArrayList glen before sorting:\n" + glen );
     selectionSortV(glen);

@@ -1,5 +1,6 @@
 At the beginning of the method, we find the current time, set it as a new variable.
 At the end of the method, we find the time.
+Save time as an array?
 Take the difference of the two times and set that as our new time variable, and now
 we have recorded the time the method took to find the target.
 
