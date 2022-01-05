@@ -138,24 +138,24 @@ public class SelectionSort
       ============================================*/
 
 
-      ArrayList glen = new ArrayList<Integer>();
-      glen.add(7);
-      glen.add(1);
-      glen.add(5);
-      glen.add(12);
-      glen.add(3);
-      System.out.println( "ArrayList glen before sorting:\n" + glen );
-      ArrayList glenSorted = selectionSort( glen );
+      ArrayList glen1 = new ArrayList<Integer>();
+      glen1.add(7);
+      glen1.add(1);
+      glen1.add(5);
+      glen1.add(12);
+      glen1.add(3);
+      System.out.println( "ArrayList glen before sorting:\n" + glen1 );
+      ArrayList glenSorted = selectionSort( glen1 );
       System.out.println( "sorted version of ArrayList glen:\n"
       + glenSorted );
-      System.out.println( "ArrayList glen after sorting:\n" + glen );
-      ArrayList coco = populate( 10, 1, 1000 );
-      System.out.println( "ArrayList coco before sorting:\n" + coco );
-      ArrayList cocoSorted = selectionSort( coco );
+      System.out.println( "ArrayList glen after sorting:\n" + glen1 );
+      ArrayList coco1 = populate( 10, 1, 1000 );
+      System.out.println( "ArrayList coco before sorting:\n" + coco1 );
+      ArrayList cocoSorted = selectionSort( coco1 );
       System.out.println( "sorted version of ArrayList coco:\n"
       + cocoSorted );
-      System.out.println( "ArrayList coco after sorting:\n" + coco );
-      System.out.println( coco );
+      System.out.println( "ArrayList coco after sorting:\n" + coco1 );
+      System.out.println( coco1 );
           /*==========for AL-returning methods==========
       ============================================*/
 
