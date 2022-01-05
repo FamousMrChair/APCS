@@ -119,11 +119,11 @@ public class SelectionSort
   {
 
     ArrayList glen = new ArrayList<Integer>();
+     System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
     glen.add(7);
     glen.add(1);
     glen.add(5);
-    glen.add(12);(  ) {
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
+    glen.add(12);
     glen.add(3);
     System.out.println( "ArrayList glen before sorting:\n" + glen );
     selectionSortV(glen);
