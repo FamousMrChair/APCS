@@ -77,10 +77,10 @@ public class SelectionSort
 
 
       for(int n = 0; n < data.size()-1;n++  ) {
-        if (data.get(n) > data.get(maxPos)){
+        if ((Integer)data.get(n) > (Integer)data.get(maxPos)){
           maxPos = n;
         }
-       int temp = data.get(maxPos);
+       Integer temp = data.get(maxPos);
        data.set(maxPos, data.get(measure));
        data.set(measure, temp);
        measure -= 1;
@@ -93,7 +93,7 @@ public class SelectionSort
 
       System.out.println( "after swap: " +  data );//diag
     }
-  }//end selectionSort
+  }
 
 
   // ArrayList-returning selectionSort
@@ -118,8 +118,8 @@ public class SelectionSort
   public static void main( String [] args )
   {
 
+    /*===============for VOID methods=============
     ArrayList glen = new ArrayList<Integer>();
-     System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
     glen.add(7);
     glen.add(1);
     glen.add(5);
@@ -128,13 +128,10 @@ public class SelectionSort
     System.out.println( "ArrayList glen before sorting:\n" + glen );
     selectionSortV(glen);
     System.out.println( "ArrayList glen after sorting:\n" + glen );
-
     ArrayList coco = populate( 10, 1, 1000 );
     System.out.println( "ArrayList coco before sorting:\n" + coco );
     selectionSortV(coco);
     System.out.println( "ArrayList coco after sorting:\n" + coco );
-     
-    /*===============for VOID methods=============
       ============================================*/
 
     /*==========for AL-returning methods==========
@@ -149,7 +146,6 @@ public class SelectionSort
       System.out.println( "sorted version of ArrayList glen:\n"
       + glenSorted );
       System.out.println( "ArrayList glen after sorting:\n" + glen );
-
       ArrayList coco = populate( 10, 1, 1000 );
       System.out.println( "ArrayList coco before sorting:\n" + coco );
       ArrayList cocoSorted = selectionSort( coco );
