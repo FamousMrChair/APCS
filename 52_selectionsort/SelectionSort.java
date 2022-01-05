@@ -68,7 +68,7 @@ public class SelectionSort
   public static void selectionSortV( ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
-
+    boolean hit = false;
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos = data.size()-1;
     int pass = data.size()-1;
@@ -79,12 +79,14 @@ public class SelectionSort
       for(int n = 0; n <= pass;n++  ) {
         if ((Integer)data.get(n) > (Integer)data.get(maxPos)){
           maxPos = n;
+         hit = true;
         }
       }
+      if (hit == true){
          Comparable temp = data.get(maxPos);
          data.set(maxPos, data.get(pass));
          data.set(pass, temp);
-
+      }
        pass -= 1;
         System.out.println( "maxPos: " + maxPos );//diag
         System.out.println( data );//diag
