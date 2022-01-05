@@ -1,5 +1,5 @@
-// 
-// APCS pd0
+// Team Deltamath: Kevin Xiao + Mr. Swag, Jun Hong Wang + Bob
+// APCS pd6
 // HW52 -- implementing selection sort
 // 2022-01-05w
 // time spent: 0.5 hrs
@@ -8,23 +8,28 @@
  *   class SelectionSort -- implements SelectionSort algorithm
  *
  * ALGO:
- *
+ * We search for the smallest value available, then swap it with the place that it's supposed to be in.
+   So on swap 1, we swap the smallest element to position 1.
+   On swap 2, we swap the next smallest element to position 2, etc.
+   After length-1 swaps, everything is sorted, and we can stop sorting.
  * DISCO
  *
  * QCC
+   Out of the 2 sorting algorithms, which of them is faster?
+   Is one more memory efficient than the other?
+   Which one is preferred (and in what cases is one preferred over the other)?
  * q0: How many passes to sort n elements?(  ) {(  ) {
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
-
  * a0:
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
+      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
  * q1: What do you know after pass p?
- * a1:
+ * a1: We know that p elements of the array are in the correct spot.
  * q2: How do you know if sorted?
- * a2:
+ * a2: If we swap length-1 times, all the elements are guaranteed to be in the correct position, so it would be swapped.
  * q3: What does a pass boil down to?
- * a3:
+ * a3: It's a search, then a swap.
+       Not sure what else happens other than these 2 things.
  ******************************/
-
 
 import java.util.ArrayList;
 
@@ -133,7 +138,7 @@ public class SelectionSort
     System.out.println( "ArrayList coco before sorting:\n" + coco );
     selectionSortV(coco);
     System.out.println( "ArrayList coco after sorting:\n" + coco );
-        
+
     /*===============for VOID methods=============
       ============================================*/
 
