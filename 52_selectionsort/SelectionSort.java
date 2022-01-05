@@ -118,7 +118,6 @@ public class SelectionSort
   public static void main( String [] args )
   {
 
-    /*===============for VOID methods=============
     ArrayList glen = new ArrayList<Integer>();
     glen.add(7);
     glen.add(1);
@@ -132,6 +131,8 @@ public class SelectionSort
     System.out.println( "ArrayList coco before sorting:\n" + coco );
     selectionSortV(coco);
     System.out.println( "ArrayList coco after sorting:\n" + coco );
+        
+    /*===============for VOID methods=============
       ============================================*/
 
     /*==========for AL-returning methods==========
