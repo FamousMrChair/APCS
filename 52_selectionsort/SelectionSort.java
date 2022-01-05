@@ -80,7 +80,7 @@ public class SelectionSort
         if ((Integer)data.get(n) > (Integer)data.get(maxPos)){
           maxPos = n;
         }
-       Integer temp = data.get(maxPos);
+       Comparable temp = data.get(maxPos);
        data.set(maxPos, data.get(measure));
        data.set(measure, temp);
        measure -= 1;
