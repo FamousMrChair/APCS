@@ -76,7 +76,7 @@ public class SelectionSort
       System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
 
 
-      for(int n = 0; n < pass;n++  ) {
+      for(int n = 0; n <= pass;n++  ) {
         if ((Integer)data.get(n) > (Integer)data.get(maxPos)){
           maxPos = n;
           Comparable temp = data.get(maxPos);
