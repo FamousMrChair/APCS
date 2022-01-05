@@ -62,9 +62,9 @@ public class SelectionSort
 
   // VOID version of SelectionSort
   // Rearranges elements of input ArrayList
-  // postcondition: d(  ) {
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
-ata's elements sorted in ascending order
+  // postcondition: data's elements sorted in ascending order(  ) {
+
+
   public static void selectionSortV( ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
