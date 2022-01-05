@@ -80,9 +80,9 @@ public class SelectionSort
         if (data.get(n) > data.get(maxPos)){
           maxPos = n;
         }
-       int temp = data.get(maxPos)
-       data.set(maxPos, data.get(measure))
-       data.set(measure, temp)
+       int temp = data.get(maxPos);
+       data.set(maxPos, data.get(measure));
+       data.set(measure, temp);
        measure -= 1
         System.out.println( "maxPos: " + maxPos );//diag
         System.out.println( data );//diag
