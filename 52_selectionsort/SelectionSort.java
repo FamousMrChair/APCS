@@ -76,7 +76,7 @@ public class SelectionSort
       System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
 
 
-      for(int n = 0; n < pass;n++  ) {
+      for(int n = 0; n <= pass;n++  ) {
         if ((Integer)data.get(n) > (Integer)data.get(maxPos)){
           maxPos = n;
          hit = true;
@@ -91,7 +91,7 @@ public class SelectionSort
        hit = false;
         System.out.println( "maxPos: " + maxPos );//diag
         System.out.println( data );//diag
-
+       maxPos = pass;
 
       System.out.println( "after swap: " +  data );//diag
     }
