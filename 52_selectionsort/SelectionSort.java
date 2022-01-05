@@ -88,6 +88,7 @@ public class SelectionSort
          data.set(pass, temp);
       }
        pass -= 1;
+       hit = false;
         System.out.println( "maxPos: " + maxPos );//diag
         System.out.println( data );//diag
 
