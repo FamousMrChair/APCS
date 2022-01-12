@@ -1,3 +1,9 @@
+// Team Deltamath: Kevin Xiao + Mr. Swag, Jun Hong Wang + Bob, Jomin Zhang + Mr. Chompsky
+// APCS pd6
+// HW54 -- All the Sorts in One File
+// 2022-01-06r
+// time spent: 0.25 hrs
+
 import java.util.ArrayList;
 
 public class MySorts {
