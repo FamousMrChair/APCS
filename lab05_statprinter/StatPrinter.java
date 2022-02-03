@@ -1,7 +1,7 @@
-// Clyde "Thluffy" Sinclair
+// Team Alpha Star - Andrey Sokolov + & Kevin Xiao + Mr. Swag
 // APCS pd0
 // L05 -- pulling it together
-// 2022-02-03r
+// 2022-02-03
 // time spent:  hrs
 
 
@@ -56,8 +56,22 @@ public class StatPrinter
 {
   // instance variable for frequencies of each integer in input ArrayList
   private ArrayList <Integer> _frequency;
+  private boolean endprogram = false;
 
-
+    //*************** QUESTION 01 **************************
+  //precond:  data.size() > 0
+  //postcond: returns largest integer in data
+  public Integer max( ArrayList <Integer> data ) 
+  { 
+    int max = data.get(0);
+    for (int i = 0; i < data.size(); i ++){
+       if (data.get(i) > max){
+          max = data.get(i);
+       }
+    }
+    return max;
+  }
+   
   //*************** QUESTION 02 **************************
   //precond:  data.size() > 0, each entry b/t 0,100 inclusive
   //postcond: _frequency.size() set to max(data) + 1
@@ -66,17 +80,22 @@ public class StatPrinter
   //  _frequency would be [0,0,3,2,0,1]
   public StatPrinter( ArrayList <Integer> data ) 
   { 
-    /* YOUR IMPLEMENTATION HERE */
+     for (int i = 0; i <= max(data); i++){
+        _frequency.add(0);
+     }
+     //boolean short-circuiting
+     for (int i = 0; i <= max(data); i ++){
+          for (int j = 0; j< data.size(); j ++){
+             if (data.get(j) == i){
+                _frequency.set(i,_frequency.get(i) + 1);
+             }
+          }
+     }
+   
   }
 
 
-  //*************** QUESTION 01 **************************
-  //precond:  data.size() > 0
-  //postcond: returns largest integer in data
-  public Integer max( ArrayList <Integer> data ) 
-  { 
-    /* YOUR IMPLEMENTATION HERE */
-  }
+
 
 
   //*************** QUESTION 03 **************************
@@ -91,7 +110,7 @@ public class StatPrinter
   //    isLocalMode(5) -> true
   public boolean isLocalMode( int i ) 
   { 
-    /* YOUR IMPLEMENTATION HERE */
+    
   }
 
 
