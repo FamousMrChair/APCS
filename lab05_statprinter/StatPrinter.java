@@ -118,18 +118,15 @@ public class StatPrinter
   //postcond: returns list of modes in _frequency
   public ArrayList<Integer> getLocalModes() 
   {
-    /* YOUR IMPLEMENTATION HERE */
 
   }
-*/
-/*
+
+
   //*************** QUESTION 05 **************************
   //precond:  longestBar > 0
   public void printHistogram( int longestBar ) 
-  {
-    /* YOUR IMPLEMENTATION HERE */ 
+  { 
   }
-
 */
  
 }//end class StatPrinter
