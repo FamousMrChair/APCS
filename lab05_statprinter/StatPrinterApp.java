@@ -40,7 +40,7 @@ public class StatPrinterApp
 
       System.out.println( "sp1 testing... " );
       sp1.max( al1 );
-    System.out.println(sp1.get(2));
+
     /*
       sp1.printHistogram( 50 );
     
