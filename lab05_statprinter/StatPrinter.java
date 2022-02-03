@@ -55,7 +55,7 @@ import java.util.ArrayList;
 public class StatPrinter
 {
   // instance variable for frequencies of each integer in input ArrayList
-  private ArrayList <Integer> _frequency;
+  private ArrayList <Integer> _frequency = new ArrayList <Integer> ;
   private boolean endprogram = false;
 
     //*************** QUESTION 01 **************************
@@ -82,6 +82,7 @@ public class StatPrinter
   { 
      for (int i = 0; i <= max(data); i++){
         _frequency.add(0);
+        _fre
      }
      //boolean short-circuiting
      for (int i = 0; i <= max(data); i ++){
