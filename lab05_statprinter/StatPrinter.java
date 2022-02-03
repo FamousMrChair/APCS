@@ -96,7 +96,7 @@ public class StatPrinter
 
 
 
-
+/*
 
   //*************** QUESTION 03 **************************
   //postcond: returns true if i > 0 and i < _frequency.size() - 1
@@ -121,13 +121,15 @@ public class StatPrinter
     /* YOUR IMPLEMENTATION HERE */
 
   }
-
-
+*/
+/*
   //*************** QUESTION 05 **************************
   //precond:  longestBar > 0
   public void printHistogram( int longestBar ) 
   {
     /* YOUR IMPLEMENTATION HERE */ 
   }
+
+*/
  
 }//end class StatPrinter
