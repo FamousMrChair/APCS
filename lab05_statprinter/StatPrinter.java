@@ -96,7 +96,7 @@ public class StatPrinter
 
 
 
-/*
+
 
   //*************** QUESTION 03 **************************
   //postcond: returns true if i > 0 and i < _frequency.size() - 1
@@ -110,7 +110,13 @@ public class StatPrinter
   //    isLocalMode(5) -> true
   public boolean isLocalMode( int i ) 
   { 
-    
+    if ( (i > 0) && (i < _frequency.size()-1)){
+       if(_frequency.get(i) > _frequency.get(i-1) && (_frequency.get(i) > _frequency.get(i+1))){
+         return true;
+       }
+    }
+   return false;
+  
   }
 
 
@@ -118,7 +124,13 @@ public class StatPrinter
   //postcond: returns list of modes in _frequency
   public ArrayList<Integer> getLocalModes() 
   {
-
+     ArrayList<Integer> modes = new ArrayList<Integer>();
+     for(int i=0;i<_frequency.size();i++){
+        if(isLocalMode(i)){
+           modes.add(i);
+        }
+     }
+     return modes;
   }
 
 
@@ -126,7 +138,23 @@ public class StatPrinter
   //precond:  longestBar > 0
   public void printHistogram( int longestBar ) 
   { 
+      int maximum = max(_frequency);
+      double ratio = (double)maximum / (double)longestBar;
+      System.out.println(ratio);
+      for (int i = 0; i < _frequency.size(); i ++){
+         System.out.print(i+ " : ");
+         double temp = (double)_frequency.get(i);
+         while (temp > 0){
+            System.out.print("*");
+            temp -= ratio;
+         }
+         System.out.print("\n");
+      }
   }
-*/
+  
  
+   public String toString(){
+      return _frequency.toString();
+   }
+
 }//end class StatPrinter
