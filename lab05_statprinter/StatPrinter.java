@@ -1,8 +1,8 @@
-// Team Alpha Star - Andrey Sokolov + & Kevin Xiao + Mr. Swag
-// APCS pd0
+// Team Alpha Star - Andrey Sokolov + Geese & Kevin Xiao + Mr. Swag
+// APCS pd8
 // L05 -- pulling it together
 // 2022-02-03
-// time spent:  hrs
+// time spent: 1.5 hrs
 
 
 /**
