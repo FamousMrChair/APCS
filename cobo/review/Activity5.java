@@ -1,6 +1,6 @@
 public class Activity5 {
   
-  char[] vowels = {'a','e','i','o','u'};
+  static char[] vowels = {'a','e','i','o','u'};
   public static String piglatin(String word){
     boolean temp = false;
     for (int i = 0; i <= vowels.length; i++){
