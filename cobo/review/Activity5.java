@@ -1,0 +1,15 @@
+public class Activity5 {
+  char[] vowels = {'a','e','i','o','u');
+  public static String piglatin(String word){
+    if ((word.charAt(0) == vowels) || (word.charAt(-1) == 'y')) {
+      word = word.substring(1) + (char)(word.charAt(0)) + "yay";
+    } else{
+      word = word.substring(1) + (char)(word.charAt(0)) + "ay";
+    }
+  }
+  public static void main(String[] args){
+    System.out.println(piglatin("Yay"));
+    System.out.println(piglatin("bedroom"));
+  }
+  
+}
