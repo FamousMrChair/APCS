@@ -1,7 +1,13 @@
 public class Activity5 {
+  
   char[] vowels = {'a','e','i','o','u'};
   public static String piglatin(String word){
-    if ((word.charAt(0) == vowels) || (word.charAt(-1) == 'y')) {
+    boolean temp = false;
+    for (int i = 0; i <= vowels.length; i++){
+      if ((word.charAt(0) == vowels[i]) || (word.charAt(-1) == 'y')){
+        temp = true;
+      }
+    if (temp == true) {
       word = word.substring(1) + (char)(word.charAt(0)) + "yay";
     } else{
       word = word.substring(1) + (char)(word.charAt(0)) + "ay";
