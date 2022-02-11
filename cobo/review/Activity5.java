@@ -7,6 +7,7 @@ public class Activity5 {
       if ((word.charAt(0) == vowels[i]) || (word.charAt(-1) == 'y')){
         temp = true;
       }
+    }
     if (temp == true) {
       word = word.substring(1) + (char)(word.charAt(0)) + "yay";
     } else{
