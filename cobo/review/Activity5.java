@@ -3,7 +3,7 @@ public class Activity5 {
   static char[] vowels = {'a','e','i','o','u'};
   public static String piglatin(String word){
     boolean temp = false;
-    for (int i = 0; i <ringL vowels.length; i++){
+    for (int i = 0; i < vowels.length; i++){
       if ((word.charAt(0) == vowels[i]) || (word.charAt(word.length()-1) == 'y')){
         temp = true;
       }
