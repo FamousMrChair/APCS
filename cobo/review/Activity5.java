@@ -13,6 +13,7 @@ public class Activity5 {
     } else{
       word = word.substring(1) + (char)(word.charAt(0)) + "ay";
     }
+    return word;
   }
   public static void main(String[] args){
     System.out.println(piglatin("Yay"));
