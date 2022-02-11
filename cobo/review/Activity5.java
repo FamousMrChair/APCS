@@ -4,7 +4,7 @@ public class Activity5 {
   public static String piglatin(String word){
     boolean temp = false;
     for (int i = 0; i <= vowels.length; i++){
-      if ((word.charAt(0) == vowels[i]) || (word.charAt(-1) == 'y')){
+      if ((word.charAt(0) == vowels[i]) || (word.charAt(word.length()-1) == 'y')){
         temp = true;
       }
     }
