@@ -37,7 +37,7 @@ public class Review {
       Scanner input = new Scanner(new File("positiveAdjectives.txt"));
       while(input.hasNextLine()){
         String temp = input.nextLine().trim();
-        System.out.println(temp);
+        //System.out.println(temp);
         posAdjectives.add(temp);
       }
       input.close();
@@ -107,6 +107,28 @@ public class Review {
     else if(value>=30&&value<40) return 4;
     else if(value>=40) return 5;
     return 0;
+  }
+
+  /**
+   * @returns the fake review which is based on the review given to it by fileName
+   */
+  public static String fakeReview(String fileName){
+    String fakeReview = "";
+    String review = textToString(fileName);
+    Scanner input = new Scanner(review);
+    while(input.hasNext()){
+      String word = input.next();
+      //Solution for activity 3 if(word.charAt(0) == '*') word = randomAdjective();
+      //Activity 4
+      String punctuation = getPunctuation(word);
+      if(word.charAt(0) == '*'){
+        word = removePunctuation(word);
+        if(sentimentVal(word) > 0 ) word = randomNegativeAdj();
+        else if (sentimentVal(word) < 0) word = randomPositiveAdj();
+      }
+      fakeReview += word + punctuation + " ";
+    }
+    return fakeReview;    
   }
 
   /**
@@ -189,8 +211,9 @@ public class Review {
     }
   }
   public static void main(String[] args){
-    System.out.println(totalSentiment(args[0]));
-    System.out.println(starRating(args[0]));
+    System.out.println(fakeReview(args[0]));
+    //System.out.println(totalSentiment(args[0]));
+    //System.out.println(starRating(args[0]));
     //System.out.println(sentimentVal("awful"));
     //System.out.println(sentimentVal("painful"));
     //System.out.println(sentimentVal("terrific"));
