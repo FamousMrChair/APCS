@@ -29,10 +29,10 @@ Activity 2
 Method was written, utilizing the existing textToString
 
 2 
-totalSentiment("SimpleReview.txt"); = 0.13
+totalSentiment("SimpleReview.txt"); = -0.59
 
 3 
-starRating("SimpleReview.txt"); = 1
+starRating("SimpleReview.txt"); = 0
 
 4
 totalSentiment(string fileName) operates using a Scanner which scans the string given to it by the textToString(string) method. 
@@ -55,7 +55,6 @@ b. it would be rational to simply flip the conditionals so that they check if th
 So chang if(totalSentiment < 15) to if(totalSentiment > 15) and so on.
 
 Activity 3
-<<<<<<< HEAD
 
 3
 indexOf takes the position of where you want to make the split and substring allows you to split the string into
@@ -80,50 +79,14 @@ Automatically send a positive review to any restuarant you thought postively of 
 Method should look through the input for any words that belong to the negativeadjective list and then replace that word with a random word from the positive adjective list.
 
 5
-Removes the first index of the string oneWord
+Removes the first index of the string oneWord.
 
 6
-Theres no data point in the csv file that has a * in front of the adjective, so not removing the * will cause an exception where the program won't be able to find the right sentiment value
+Theres no data point in the csv file that has a * in front of the adjective, so not removing the * will cause an exception where the program won't be able to find the right sentiment value.
 
 7
-Replace all the adjectives with positive adjectives
+Replace all the adjectives with positive adjectives.
 
-
-
-
-=======
->>>>>>> 742b90149602f308677fc1893f1ec0f32e08a18f
-
-3
-indexOf takes the position of where you want to make the split and substring allows you to split the string into
-sections when paired with indexOf. It's important to add a 1 to the position of the space because substring takes the first index inclusive.
-
-5
-A static method belongs to the class while a non-static method belongs to an object of the class. Therefore, the static method can be called by the class as well as the object of the class but
-non-static can only be called by the object, so it's more convenient to use a static method here.
-
-6
-You could replace all the adjectives used in the review with random negative or random positive adjectives, thus artificially creating a negative or positive review.
-
-Activity 4
-
-1 
-Automatically send a negative review to any restaurant you thought negatively of or have critiques of.
-
-2
-Automatically send a positive review to any restuarant you thought postively of or just out of an act of kindness.
-
-3
-Method should look through the input for any words that belong to the negativeadjective list and then replace that word with a random word from the positive adjective list.
-
-5
-Removes the first index of the string oneWord
-
-6
-Theres no data point in the csv file that has a * in front of the adjective, so not removing the * will cause an exception where the program won't be able to find the right sentiment value
-
-7
-Replace all the adjectives with positive adjectives
 ---------------------------------------------------------------------------------------
 DISCO:
 
@@ -134,4 +97,3 @@ Csv files are convenient to parse through.
 QCC:
 
 How can we write a program that would generate reviews based on past reviews?
-
