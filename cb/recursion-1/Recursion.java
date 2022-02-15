@@ -1,4 +1,4 @@
-// Team Alpha Star - Andrey Sokolov + Geese & Kevin Xiao + Mr. Swag (with help of Joshua Gao)
+// Team Alpha Star - Andrey Sokolov + Geese & Kevin Xiao + Mr. Swag
 // APCS pd8
 // HW 64 - Revisitation
 // 2022-02-14
