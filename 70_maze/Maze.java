@@ -1,8 +1,8 @@
-// Clyde Sinclair
-// APCS pd0
+// Red Lobsters: Julia Kozak, Kevin Xiao, Faiyaz Rafee
+// APCS pd08
 // HW69 -- maze solving (blind, depth-first)
 // 2022-03-03r
-// time spent:  hrs
+// time spent: hrs
 
 /***
  * SKEELTON for
@@ -15,11 +15,19 @@
  * (mazefile is ASCII representation of a maze, using symbols below)
  *
  * ALGORITHM for finding exit from starting position:
- *  <INSERT YOUR SUMMARY OF ALGO HERE>
+ *  - From your starting square, check if there is an open path to each of your four possible moves (up, right, left, down).
+ *  - Once you find a move, move there, marking the square you were previously at as part of your path, and repeat the process.
+ *  - If you reach a point where you find no possible moves, return to the square you were at (marking it as visited), then return to the square before that, etc. until you reach the last square for which you had other possible moves, and try its next possible move.
+ *  - If you reach the exit (or you have tried all possible paths), the program will terminate.
  *
- * DISCO
+ * DISCO:
+ *  - Code written after the recursion step will be executed once all four recursive calls run and return (meaning that trying that path was unsuccessful).
+ *  - Another ANSI prefix for escape is \u001b
+ *  - text files can have extensions like .maze and their contents can still be processed as text.
  *
- * QCC
+ * QCC:
+ *  - Are there any ways to optimize the solution (ex. pick the move that is closest to the goal, which might not always work)?
+ *  - Can recursive backtracking also be used to randomly generate mazes?
  *
  ***/
 
@@ -92,7 +100,7 @@ class MazeSolver
   public String toString()
   {
     //send ANSI code "ESC[0;0H" to place cursor in upper left
-    String retStr = "[0;0H";
+    String retStr = "\u001b[0;0H";
     //emacs shortcut: C-q, ESC
     //emacs shortcut: M-x quoted-insert, ESC
 
@@ -127,34 +135,35 @@ class MazeSolver
    **/
   public void solve( int x, int y )
   {
-    delay( FRAME_DELAY ); //slow it down enough to be followable
+    delay( FRAME_DELAY );
+    System.out.println( this );  //slow it down enough to be followable
 
     //primary base case
-    if (_maze[y][x] == ('$')) {
-      return;
+    if ( _maze[x][y] == '$' ) {
+      System.exit(0);
     }
     //other base cases
-    else if (_maze[y][x] == ('.') || _maze[y][x] == (' ')){
+    else if ( _maze[x][y] != '#') {
       return;
     }
     //otherwise, recursively solve maze from next pos over,
     //after marking current location
     else {
-
-      System.out.println( this ); //refresh screen
-
-      System.out.println( this ); //refresh screen
+      _maze[x][y] = '@';
+      solve(x, y-1);
+      solve(x+1, y);
+      solve(x-1, y);
       solve(x, y+1);
-      solve(x+1,y);
-      solve(x,y-1);
-      solve(x-1,y);
-
+      System.out.println( this ); //refresh screen
+      delay(FRAME_DELAY);
+      _maze[x][y] = '.';
+      System.out.println( this ); //refresh screen
     }
   }
 
   //accessor method to help with randomized drop-in location
   public boolean onPath( int x, int y) {
-    return (_maze[y][x] == ('#'));
+    return _maze[x][y] == '#';
   }
 
 }//end class MazeSolver
@@ -178,18 +187,24 @@ public class Maze
     MazeSolver ms = new MazeSolver( mazeInputFile );
 
     //clear screen
-    System.out.println( "[2J" );
+    System.out.println( "\u001b[2J" );
 
     //display maze
     System.out.println( ms );
 
     //drop hero into the maze (coords must be on path)
     // ThinkerTODO: comment next line out when ready to randomize startpos
-    ms.solve( 4, 3 );
+    //ms.solve( 4, 3 );
 
     //drop our hero into maze at random location on path
     // YOUR RANDOM-POSITION-GENERATOR CODE HERE
-    //ms.solve( startX, startY );
+    int startX = (int)(Math.random() * 80);
+    int startY = (int)(Math.random() * 25);
+    while (!ms.onPath(startX, startY)) {
+      startX = (int)(Math.random() * 80);
+      startY = (int)(Math.random() * 25);
+    }
+    ms.solve( startX, startY );
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }//end main()
