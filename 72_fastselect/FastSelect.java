@@ -36,7 +36,7 @@ public class FastSelect {
         System.out.println(ythSmallest(arr, 0, 4, 2));
         System.out.println(ythSmallest(arr, 0, 4, 3));
         System.out.println(ythSmallest(arr, 0, 4, 4));
-        //System.out.println(ythSmallest(arr, 0, 4, 5)); //this one breaks
+        System.out.println(ythSmallest(arr, 0, 4, 5)); //this one breaks
 
     }
 
