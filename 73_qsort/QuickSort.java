@@ -89,7 +89,7 @@ public class QuickSort
   public static void qsortHelper(int [] d, int loPos, int hiPos){
     int pvtPos = (loPos + hiPos) / 2;
     //base case
-    if (hiPos == loPos){
+    if (hiPos == loPos + 1){
       return;
     } else {
       partition(d, loPos, hiPos);
