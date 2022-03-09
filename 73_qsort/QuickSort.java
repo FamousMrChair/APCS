@@ -115,7 +115,7 @@ public class QuickSort
     qsort( arr1 );
     System.out.println("arr1 after qsort: " );
     printArr(arr1);
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)     // randomly-generated arrays of n distinct vals
+    // randomly-generated arrays of n distinct vals
     int[] arrN = new int[10];
     for( int i = 0; i < arrN.length; i++ )
     arrN[i] = i;
@@ -127,10 +127,10 @@ public class QuickSort
     qsort( arrN );
     System.out.println("arrN after sort: " );
     printArr(arrN);
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
+
+
     //get-it-up-and-running, static test case w/ dupes:
     int [] arr2 = {7,1,5,12,3,7};
     System.out.println("\narr2 init'd to: " );
@@ -150,7 +150,6 @@ public class QuickSort
     qsort( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   }//end main
 
