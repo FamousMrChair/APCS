@@ -102,21 +102,21 @@ public class QuickSort
   
   public static void qsortHelper(int [] d, int loPos, int hiPos){
     int pvtPos = (loPos + hiPos) / 2;
-    //base case
-    if (hiPos == loPos + 1){
-      return;
-    } else {
-      partition(d, loPos, hiPos);
-      qsortHelper(d, loPos, pvtPos);
-      qsortHelper(d, pvtPos, hiPos);
+    //base case: 
+    //If loPos and hiPos ever cross over each other (meaning lo is greater than hi / hi is less than lo)
+    if (hiPos <= loPos) {
+        return;
     }
+    
+    pvtPos = partition(d, loPos, hiPos);
+    //printArr(d);
+    
+    //Partition the left of pvtPos
+    qsortHelper(d, loPos, pvtPos - 1);
+    //Partition the right of pvtPos
+    qsortHelper(d, pvtPos + 1, hiPos);
   }
-
   //you may need a helper method...
-
-
-  
-
 
   //main method for testing
   public static void main( String[] args )
