@@ -21,6 +21,14 @@ time spent: 1 hour
  * 3. Approach to handling duplicate values in array:
  * We can simply ignore duplicate values by using an <= or >= sign and we can treat them as just another number within the array that needs to be sorted.
  
+  *
+ * DISCO
+ *  - The run time of Quick Sort is very dependent on the chosen pivot, and since the pivot is chosen from an unsorted list, 
+ *    any algorithmic selection of the pivot is the same as randomly choosing
+ *      - We didn't do random even though it sounds easier because we were too far in with our "pick the middle" algo
+ * 
+ * QCC
+ *  - Quicksort looks like it's O(n^2) in the worst case scenario, so what puts this on par with Merge sort?
  **/
 
 */
