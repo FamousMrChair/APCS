@@ -1,8 +1,9 @@
-//Clyde Sinclair
-//APCS pd0
-//HW72 -- QuickSort
-//2022-03-09w
-//time spent: _h
+/*
+Team Three Kevins: Kevin Xiao, Kevin Li, Hamim Seam (honorary Kevin)
+APCS
+HW73 -- Quick Sort
+2022-03-09
+time spent: 1 hour
 
 /***
  * class QuickSort
@@ -10,14 +11,19 @@
  *
  * 1. Summary of QuickSort algorithm:
  * QSort(arr):
- *
+ * Partitions the array into two parts, we know the pivot point is in the right place. Now we have two unsorted regions and we're going to split both
+ regions into two parts again, recursively calling this down. The base case is when there is only one element in the region, and thus we will know that
+ region is sorted. 
  * 2a. Worst pivot choice and associated run time:
- *
+ * Picking the first element could possibly be the worst case scenario is the data is inversely sorted, as it will have a n^2 time complexity.
  * 2b. Best pivot choice and associated run time:
- *
+ * Picking the middle element would result in the best average amount of time, and if the data is already sorted time complexity would just be O(n)
  * 3. Approach to handling duplicate values in array:
- *
+ * We can simply ignore duplicate values by using an <= or >= sign and we can treat them as just another number within the array that needs to be sorted.
+ 
  **/
+
+*/
 
 public class QuickSort
 {
