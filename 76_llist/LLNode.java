@@ -16,7 +16,7 @@ public class LLNode{
     }
     
     public String getCargo(){
-      return car;
+      return cargo;
     }
     
     public LLNode getNext(){
