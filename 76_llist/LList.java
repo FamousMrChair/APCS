@@ -5,6 +5,15 @@ HW76 -- Creating List using nodes
 time spent: .6 hours
  * class LList
  * Implements a linked list of LLNodes, each containing String data
+ 
+ DISCO:
+ The list we are implementing have most of the same properties as the interface list we implemented within orderedarraylist
+ Java Garbage Collector is pacman the great incarnated.
+ 
+
+ QCC:
+ Why is this important to us?
+ 
  **/
 
 public class LList implements List //interface def must be in this dir
