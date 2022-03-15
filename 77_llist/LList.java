@@ -67,7 +67,7 @@ public class LList implements List //interface def must be in this dir
     if ( index < 0 || index >= size() )
       throw new IndexOutOfBoundsException();
     String removedNode;
-    if (index = 0){
+    if (index == 0){
 	removedNode = _head.getCargo();
 	_head = _head.getNext();
 	return removedNode;
