@@ -6,10 +6,14 @@ time spent: .6 hours
  * class LList
  * Implements a linked list of LLNodes, each containing String data
  
- DISCO:
-
- 
+ DISCO: 
+ The crucial trick to implementing add and remove methods are to know how to change the pointers of the nodes so that we
+ can insert a new node in between two nodes or completely wipe a node from existence through remove.
+ Making temporary variables to store our cargos is very useful!
  QCC:
+ Why is this useful to us? Why do we need to know how to add and subtract nodes?
+ What is LinkedList? We heard this term from today in class and we are terrified by the connotations associated with this word
+ from the intertrash.
 
  **/
 public class LList implements List //interface def must be in this dir
