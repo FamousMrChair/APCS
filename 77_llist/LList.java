@@ -12,7 +12,6 @@ time spent: .6 hours
  QCC:
 
  **/
-
 public class LList implements List //interface def must be in this dir
 {
 
@@ -23,8 +22,8 @@ public class LList implements List //interface def must be in this dir
   // constructor -- initializes instance vars
   public LList( )
   {
-    _head = null; //at birth, a list has no elements
     _size = 0;
+    _head = null;
   }
 
 
@@ -32,28 +31,81 @@ public class LList implements List //interface def must be in this dir
 
   public boolean add( String newVal )
   {
-    LLNode tmp = new LLNode( newVal, _head );
-    _head = tmp;
+    LLNode temp = new LLNode(newVal, _head);
+    _head = temp;
     _size++;
+
     return true;
   }
 
+  public void add (int index, String newVal) {
+    if ( index < 0 || index >= size() )
+      throw new IndexOutOfBoundsException();
+    if (index == 0) {
+        add(newVal);
+        return;
+    }
+
+    LLNode before = _head;
+    LLNode after;
+    LLNode addedNode;
+
+    for (int i = 0; i < index - 1; i++) {
+        before = before.getNext();
+    }
+
+    after = before.getNext();
+    addedNode = new LLNode(newVal, after);
+
+    before.setNext(addedNode);
+    _size++;
+
+  }
+
+  //does not work for index 0
+  public String remove (int index) {
+    if ( index < 0 || index >= size() )
+      throw new IndexOutOfBoundsException();
+    String removedNode;
+    if (index = 0){
+	removedNode = _head.getCargo();
+	_head = _head.getNext();
+	return removedNode;
+    }
+    LLNode before = _head;
+	  // Initialize temp variable
+    LLNode after;
+	  // Initialize temp variable
+    
+
+    for (int i = 0; i < index - 1; i++) {
+        before = before.getNext();
+	    //before is one before our target node now
+    }
+
+    after = before.getNext();
+	  // After is our target number
+    removedNode = "[ " + after.getCargo() + " ]";
+    after = after.getNext();
+	  //after becomes the node after the target
+
+    before.setNext(after);
+
+    _size--;
+    return removedNode;
+  }
 
   public String get( int index )
   {
     if ( index < 0 || index >= size() )
       throw new IndexOutOfBoundsException();
 
-    String retVal;
-    LLNode tmp = _head; //create alias to head
+    LLNode temp = _head;
+    for(int i = 0; i < index; i++) {
+        temp = temp.getNext();
+    }
 
-    //walk to desired node
-    for( int i=0; i < index; i++ )
-      tmp = tmp.getNext();
-
-    //check target node's cargo hold
-    retVal = tmp.getCargo();
-    return retVal;
+    return temp.getCargo();
   }
 
 
@@ -63,50 +115,41 @@ public class LList implements List //interface def must be in this dir
     if ( index < 0 || index >= size() )
       throw new IndexOutOfBoundsException();
 
-    LLNode tmp = _head; //create alias to head
-
-    //walk to desired node
-    for( int i=0; i < index; i++ )
-      tmp = tmp.getNext();
-
-    //store target node's cargo
-    String oldVal = tmp.getCargo();
-
-    //modify target node's cargo
-    tmp.setCargo( newVal );
-
-    return oldVal;
+    LLNode temp = _head;
+    for (int i = 0; i < index; i++) {
+        temp = temp.getNext();
+    }
+  
+    return temp.setCargo(newVal);
   }
 
 
   //return number of nodes in list
-  public int size() { return _size; }
+  public int size()
+  {
+    return _size;
+  }
 
   //--------------^  List interface methods  ^--------------
+
 
 
   // override inherited toString
   public String toString()
   {
-    String retStr = "HEAD->";
-    LLNode tmp = _head; //init tr
-    while( tmp != null ) {
-	    retStr += tmp.getCargo() + "->";
-	    tmp = tmp.getNext();
+    String output = "[ ";
+    LLNode temp = _head;
+
+    for (int i = 0; i < _size; i++) {
+        output += temp.getCargo();
+        output += " ";
+        temp = temp.getNext();
     }
-    retStr += "NULL";
-    return retStr;
+
+    output += "]";
+    return output;
   }
-  
-  public void add(int index, String newVal){
-      if ( index < 0 || index >= size() )
-       throw new IndexOutOfBoundsException();
-    LLNode tmp = _head;
-    for(int i = 0; i < index; i++){
-      tmp = tmp.getNext();
-    }
-    tmp = tmp.setNext(newVal);
-  }
+
 
   //main method for testing
   public static void main( String[] args )
@@ -138,6 +181,22 @@ public class LList implements List //interface def must be in this dir
     System.out.println( "...and now 2nd item is: " + james.set(1,"got") );
 
     System.out.println( james );
+
+    System.out.println( "removed item: " + james.remove(2));
+    System.out.println(james);
+
+    james.add(2, "a");
+    System.out.println("added removed item back");
+    System.out.println(james);
+
+    james.add(0, "do");
+    System.out.println("added item to index 0");
+    System.out.println(james);
+
+    System.out.println( "removed item: " + james.remove(0));
+    System.out.println(james);
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }
 
 }//end class LList
