@@ -14,7 +14,20 @@ time spent: .6 hours
  Why is this useful to us? Why do we need to know how to add and subtract nodes?
  What is LinkedList? We heard this term from today in class and we are terrified by the connotations associated with this word
  from the intertrash.
-
+ ADD ALGO:
+ 0. If the insertion index is 0, then add the new value at the start of the list and return
+ 1. Move the LLNode "before" so that it points to the node at the index before the insertion index
+ 2. Move the LLNode "after" so that it points to the node after "before"
+ 3. create a new node that has the inputted value, and which points to "afterIndex"
+ 4. make "before" point to the new node
+ REMOVE ALGO:
+ 0. If the removal index is 0, then change _head so that it points to the next node
+ 1. Move "before" so that it points to the node at the index before the removal index
+ 2. Move "after" so that it points to the node after "before"
+ 3. Store the current value of "after" in a string called removedNode
+ 4. Advance "after" by 1 node
+ 5. make "before" point to "after"
+ 6. return removedNode 
  **/
 public class LList implements List //interface def must be in this dir
 {
@@ -43,8 +56,9 @@ public class LList implements List //interface def must be in this dir
   }
 
   public void add (int index, String newVal) {
-    if ( index < 0 || index >= size() )
+    if ( index < 0 || index > size() )
       throw new IndexOutOfBoundsException();
+    
     if (index == 0) {
         add(newVal);
         return;
@@ -66,16 +80,16 @@ public class LList implements List //interface def must be in this dir
 
   }
 
-  //does not work for index 0
   public String remove (int index) {
     if ( index < 0 || index >= size() )
       throw new IndexOutOfBoundsException();
+
     String removedNode;
     if (index == 0){
-	removedNode = _head.getCargo();
-	_head = _head.getNext();
-	_size--;
-	return removedNode;
+	    removedNode = _head.getCargo();
+	    _head = _head.getNext();
+	    _size--;
+	    return removedNode;
     }
     LLNode before = _head;
 	  // Initialize temp variable
@@ -200,6 +214,14 @@ public class LList implements List //interface def must be in this dir
 
     System.out.println( "removed item: " + james.remove(0));
     System.out.println(james);
+
+    System.out.println( "removed item: " + james.remove(3));
+    System.out.println(james);
+
+    james.add(3, "beat");
+    System.out.println("added removed item back");
+    System.out.println(james);
+
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }
