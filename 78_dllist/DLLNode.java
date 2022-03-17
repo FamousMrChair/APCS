@@ -11,10 +11,10 @@ public class DLLNode{
     private String cargo;
     private DLLNode next;
     
-    public DLLNode(DLLNode previous, String cargo, DLLNode cdr){
+    public DLLNode(DLLNode previous, String cargo, DLLNode next){
       this.previous = previous;
       this.cargo = cargo;
-      this.next = cdr;
+      this.next = next;
     }
     
     public String getCargo(){
