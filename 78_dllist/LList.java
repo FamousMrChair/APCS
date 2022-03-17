@@ -1,3 +1,42 @@
+/***
+Team Three Kevins: Kevin Xiao, Kevin Li, Hamim Seam (honorary Kevin)
+APCS
+HW77 -- Removal
+time spent: .6 hours
+Quanitity of KTS consumed: 3
+ * class LList
+ * Implements a linked list of DLLNodes, each containing String data
+ 
+ DISCO:
+ We actually proposed the idea of having two pointers when we were asked the question of how to deal with losing the node to the left of the list when you pass through
+ the list, but we didn't know that was called a double linked list.
+ Double linked list makes it so that we don't have to implement temporary variables that make the code more confusing.
+ 
+ QCC:
+ Can we make pointers point to the same block to make sublists?
+
+ ALGO ADD:
+ 0. If the insertion index is 0, then add the new value at the start of the list and return
+ 1. Move the DLLNode "before" so that it points to the node at the index before the insertion index
+ 2. Move the DLLNode "after" so that it points to the node after "before"
+ 3. create a new node that has the inputted value, and which points to "afterIndex"
+ 4. Point the previous of afterIndex to the new node.
+ 5. make "before" point to the new node
+ 6. Point the previous of the new node to the before node.
+ 
+ 
+ REMOVE ALGO:
+ 0. If the removal index is 0, then change _head so that it points to the next node
+ 1. Move "before" so that it points to the node at the index before the removal index
+ 2. Move "after" so that it points to the node after "before"
+ 3. Store the current value of "after" in a string called removedNode
+ 4. Advance "after" by 1 node
+ 5. make "before" point to "after"
+ 6. make the after node's previous point to the before node
+ 7. return removedNode 
+ 
+ ***/
+
 public class LList implements List //interface def must be in this dir
 {
 
