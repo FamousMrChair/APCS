@@ -57,8 +57,9 @@ public class Shuffler {
 			top[i] = values[i+values.length/2];
 		}
 		for (int i = 0; i < values.length/2; i++){
-			values[i*2] = top[i];
-			values[i*2-1] = bottom[i];
+			
+			values[i*2] = bottom[i];
+			values[i*2+1] = bottom[i];
 		}
 	}
 
