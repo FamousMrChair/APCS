@@ -56,6 +56,7 @@ Activity 7
         }
     e) anotherPlayIsPossible() needs to run cardIndexes() so it can find and check every possible card combination. isLegal() just has to check if its given combination is legal
 
+Activity 8
 
 1. Elevens, Tens, and Thirteens all involve selecting a pair of cards that sum up to a specific number. Each of them also has a special case,
 where you can remove more than 2 cards. Each of them also has a different board size. 
