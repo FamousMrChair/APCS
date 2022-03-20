@@ -8,8 +8,13 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		Deck Kevin1 = new Deck('one', 'two', 'three', 'spade','diamond', 1,2,3);
+		String[] ranks = new String[3];
+		ranks[1] = 'one';
+		ranks[2] = 'two';
+		ranks[3] = 'three';
+		Deck Kevin1 = new Deck(ranks, ['spade','diamond'], [1,2,3]);
 		System.out.println(Kevin1.size());
+		
 
 		
 	}
