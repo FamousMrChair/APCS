@@ -15,7 +15,7 @@ public class DeckTester {
 		String[] suits = new String[2];
 		suits[0] = "spade";
 		suits[1] = "diamond";
-		Integer[] values = new Integer[3];
+		int[] values = new int[3];
 		values[0] = 1;
 		values[1] = 2;
 		values[2] = 3;
