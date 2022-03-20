@@ -9,7 +9,11 @@ public class DeckTester {
 	 */
 	public static void main(String[] args) {
 		Deck Kevin1 = new Deck(['one', 'two', 'three'], ['spade','diamond'], [1,2,3]);
+		System.out.println(Kevin1.size());
 		Deck Kevin2 = new Deck(['four', 'five', 'six'], ['heart','clover'], [4,5,6]);
+		System.out.println(Kevin2.deal());
 		Deck Kevin3 = new Deck(['seven', 'eight', 'nine'], ['spade','heart'], [7,8,9]);
+		System.out.println(Kevin3);
+		
 	}
 }
