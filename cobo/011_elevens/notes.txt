@@ -11,4 +11,25 @@ there will be 6 total card elements.
  
  Activity 3
  
+ 1. public static String flip(){
+   if (Math.random() <= 0.66){
+      return "heads";
+   else {
+      return "tails";
+   }
+ }
+ 2. public static boolean arePermutations(int[] kevin, int[] anotherkevin){
+    for (int i = 0; i < kevin.length; i++){
+       for (int j = 0; j < anotherkevin.length, j++){
+           if (kevin[i] == anotherkevin[j]){
+              break;
+           }
+           if (j == anotherkevin.length - 1){
+             return false;
+           }
+       }
+    }
+    return true;
+}
+3. 1 and 2. 1 would switch the places of 1 and 4, and 2 would switch the places of 2 and 3.
  
