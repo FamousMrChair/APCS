@@ -24,7 +24,7 @@ public class DeckTester {
 		Deck Kevin2 = new Deck(ranks, suits, values);
 		System.out.println(Kevin2.deal());
 		Deck Kevin3 = new Deck(ranks, suits, values);
-		System.out.println(Kevin3);		
+			
 
 		
 	}
