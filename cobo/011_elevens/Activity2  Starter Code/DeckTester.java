@@ -19,11 +19,12 @@ public class DeckTester {
 		values[0] = 1;
 		values[1] = 2;
 		values[2] = 3;
-		Deck Kevin = new Deck(ranks, suits, values);
-		System.out.println(Kevin.size());
+		Deck Kevin1 = new Deck(ranks, suits, values);
+		System.out.println(Kevin1.size());
 		Deck Kevin2 = new Deck(ranks, suits, values);
 		System.out.println(Kevin2.deal());
 		Deck Kevin3 = new Deck(ranks, suits, values);
+		System.out.println(Kevin3);
 			
 
 		
