@@ -53,8 +53,8 @@ public class Shuffler {
 		int[] top = new int[26];
 		int[] bottom = new int[26];
 		for (int i = 0; i < 26; i ++){
-			bottom = values[i];
-			top = values[i+26];
+			bottom[i] = values[i];
+			top[i] = values[i+26];
 		}
 		for (int i = 0; i < 26; i++){
 			values[i*2] = top[i];
