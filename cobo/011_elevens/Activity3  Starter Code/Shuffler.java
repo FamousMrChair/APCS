@@ -50,13 +50,13 @@ public class Shuffler {
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
 	public static void perfectShuffle(int[] values) {
-		int[] top = new int[26];
-		int[] bottom = new int[26];
-		for (int i = 0; i < 26; i ++){
+		int[] top = new int[values.length/2];
+		int[] bottom = new int[values.length/2];
+		for (int i = 0; i < values.length/2; i ++){
 			bottom[i] = values[i];
-			top[i] = values[i+26];
+			top[i] = values[i+values.length/2];
 		}
-		for (int i = 0; i < 26; i++){
+		for (int i = 0; i < values.length/2; i++){
 			values[i*2] = top[i];
 			values[i*2-1] = bottom[i];
 		}
