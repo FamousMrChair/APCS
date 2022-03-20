@@ -50,7 +50,16 @@ public class Shuffler {
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
 	public static void perfectShuffle(int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] top = new int[26];
+		int[] bottom = new int[26];
+		for (int i = 0; i < 26; i ++){
+			bottom = values[i];
+			top = values[i+26];
+		}
+		for (int i = 0; i < 26; i++){
+			values[i*2] = top[i];
+			values[i*2-1] = bottom[i];
+		}
 	}
 
 	/**
