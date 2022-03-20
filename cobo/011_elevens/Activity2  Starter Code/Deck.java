@@ -71,7 +71,7 @@ public class Deck {
 	 */
 	public Card deal() {
 		size--;
-		return cards[size];
+		return cards.remove[size+1];
 	}
 
 	/**
