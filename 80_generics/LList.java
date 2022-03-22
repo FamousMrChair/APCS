@@ -8,7 +8,7 @@ time spent: 0.5 hour
 
 
 
-public class LList implements List //interface def must be in this dir
+public class LList implements List<> //interface def must be in this dir
 {
 
   //instance vars
