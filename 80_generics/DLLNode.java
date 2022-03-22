@@ -6,9 +6,9 @@ HW 79 - Youtube Host
 time spent: 0.5 hour
 */
 
-public class DLLNode{
+public class DLLNode<T>{
     private DLLNode previous;
-    private String cargo;
+    private T cargo;
     private DLLNode next;
     
     public DLLNode(DLLNode previous, String cargo, DLLNode next){
@@ -17,7 +17,7 @@ public class DLLNode{
       this.next = next;
     }
     
-    public String getCargo(){
+    public T getCargo(){
       return cargo;
     }
     
@@ -29,8 +29,8 @@ public class DLLNode{
       return next;
     }
     
-    public String setCargo(String car){
-      String output = this.cargo;
+    public T setCargo(String car){
+      T output = this.cargo;
       this.cargo = car;
       return output;
     }
