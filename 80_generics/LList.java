@@ -97,7 +97,7 @@ public class LList implements List //interface def must be in this dir
   }
 
 
-  public T set( int index, T newVal )
+  public String set( int index, String newVal )
   {
 
     if ( index < 0 || index >= size() ) {
