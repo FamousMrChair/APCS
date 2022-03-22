@@ -8,7 +8,7 @@ time spent: 0.5 hour
 
 
 
-public class LList implements <List> //interface def must be in this dir
+public class LList implements List //interface def must be in this dir
 {
 
   //instance vars
@@ -25,7 +25,7 @@ public class LList implements <List> //interface def must be in this dir
 
   //--------------v  List interface methods  v--------------
 
-  public boolean add( T newVal )
+  public boolean add( String newVal )
   {
     DLLNode temp = new DLLNode(null, newVal, _head);
     _head = temp;
@@ -34,7 +34,7 @@ public class LList implements <List> //interface def must be in this dir
     return true;
   }
 
-  public void add (int index, T newVal) {
+  public void add (int index, String newVal) {
       
     if ( index < 0 || index > size() ) {
         throw new IndexOutOfBoundsException();
@@ -57,7 +57,7 @@ public class LList implements <List> //interface def must be in this dir
 
   }
 
-  public T remove (int index) {
+  public String remove (int index) {
     if ( index < 0 || index >= size() ) {
         throw new IndexOutOfBoundsException();
     }
@@ -85,7 +85,7 @@ public class LList implements <List> //interface def must be in this dir
     return removedNode;
   }
 
-  public T get( int index )
+  public String get( int index )
   {
     if ( index < 0 || index >= size() ) {
         throw new IndexOutOfBoundsException();
