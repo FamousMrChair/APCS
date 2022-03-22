@@ -11,7 +11,7 @@ public class DLLNode<T>{
     private T cargo;
     private DLLNode next;
     
-    public DLLNode(DLLNode previous, String cargo, DLLNode next){
+    public DLLNode(DLLNode previous, T cargo, DLLNode next){
       this.previous = previous;
       this.cargo = cargo;
       this.next = next;
@@ -29,7 +29,7 @@ public class DLLNode<T>{
       return next;
     }
     
-    public T setCargo(String car){
+    public T setCargo(T car){
       T output = this.cargo;
       this.cargo = car;
       return output;
