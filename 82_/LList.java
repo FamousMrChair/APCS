@@ -284,7 +284,7 @@ public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
     {
         if(_dummy.getPrev() == null){
           removeFirst();
-        } else if (_dummy.getNext() = null){
+        } else if (_dummy.getNext() == null){
           removeLast();
         } else {
           _dummy.getPrev().setNext(_dummy.getNext());
