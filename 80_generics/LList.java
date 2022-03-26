@@ -25,7 +25,7 @@ public class LList<T> implements List<T> //interface def must be in this dir
 
   //--------------v  List interface methods  v--------------
 
-  public boolean add( String newVal )
+  public boolean add( T newVal )
   {
     DLLNode temp = new DLLNode(null, newVal, _head);
     _head = temp;
@@ -34,12 +34,12 @@ public class LList<T> implements List<T> //interface def must be in this dir
     return true;
   }
 
-  public void add (int index, String newVal) {
-      
+  public void add (int index, T newVal) {
+
     if ( index < 0 || index > size() ) {
         throw new IndexOutOfBoundsException();
     }
-    
+
     if (index == 0) {
         add(newVal);
         return;
@@ -57,12 +57,12 @@ public class LList<T> implements List<T> //interface def must be in this dir
 
   }
 
-  public String remove (int index) {
+  public T remove (int index) {
     if ( index < 0 || index >= size() ) {
         throw new IndexOutOfBoundsException();
     }
 
-    String removedNode;
+    T removedNode;
     if (index == 0){
 	    removedNode = _head.getCargo();
 	    _head = _head.getNext();
@@ -72,7 +72,7 @@ public class LList<T> implements List<T> //interface def must be in this dir
 
     DLLNode before = getNode(index - 1);
     DLLNode after = before.getNext();
-    removedNode = "[ " + after.getCargo() + " ]";
+    removedNode = after.getCargo();
 
     after = after.getNext();
     before.setNext(after);
@@ -85,7 +85,7 @@ public class LList<T> implements List<T> //interface def must be in this dir
     return removedNode;
   }
 
-  public String get( int index )
+  public T get( int index )
   {
     if ( index < 0 || index >= size() ) {
         throw new IndexOutOfBoundsException();
@@ -97,7 +97,7 @@ public class LList<T> implements List<T> //interface def must be in this dir
   }
 
 
-  public String set( int index, String newVal )
+  public T set( int index, T newVal )
   {
 
     if ( index < 0 || index >= size() ) {
@@ -105,7 +105,7 @@ public class LList<T> implements List<T> //interface def must be in this dir
     }
 
     DLLNode temp = getNode(index);
-  
+
     return temp.setCargo(newVal);
   }
 
