@@ -3,8 +3,7 @@
  * Implements a linked list of DLLNodes.
  * Version 06 is iterable via FOREACH loop
  * (...because modifications were made to local List interface.)
- 
- /*
+
 Team Three Kevins: Kevin Li, Kevin Xiao, Hamim Seam
 APCS
 HW82 Roll Iterator
