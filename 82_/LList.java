@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 
-public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
+public class LList<T> implements List<T> //Q: Why no "implements Iterable" ? A: List implements Iterable already. Replacing implements List with implements Iterable would make LList not a List
 {
   // Your List.java must be in same dir to supersede
   // built-in Java List interface
@@ -154,7 +154,7 @@ public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
   //return an Iterator over this list
   public Iterator<T> iterator()
   {
-    Iterator itr = new MyIterator();
+    Iterator<T> itr = new MyIterator();
     return itr;
   }
 
@@ -264,16 +264,17 @@ public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
     //return true if iteration has more elements.
     public boolean hasNext() 
     {
-      return (_dummy.getNext() != null);
+      return (_dummy != null);
     }
 
 
     //return next element in this iteration
     public T next() 
     {
+      T cargo = _dummy.getCargo();
       _dummy = _dummy.getNext();
       _okToRemove = true;
-      return _dummy.getCargo();
+      return cargo;
     }
 
 
@@ -300,7 +301,6 @@ public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
   //main method for testing
   public static void main( String[] args )
   {
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LList james = new LList();
 
     System.out.println("initially: " );
@@ -343,6 +343,7 @@ public class LList<T> implements List<T> //Q: Why no "implements Iterable" ?
 
     System.out.println( "...after remove(0): " + james.remove(0) );
     System.out.println( james + "\tsize: " + james.size() );
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }//end main()
 
