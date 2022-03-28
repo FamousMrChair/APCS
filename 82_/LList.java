@@ -3,6 +3,23 @@
  * Implements a linked list of DLLNodes.
  * Version 06 is iterable via FOREACH loop
  * (...because modifications were made to local List interface.)
+ 
+ /*
+Team Three Kevins: Kevin Li, Kevin Xiao, Hamim Seam
+APCS
+HW82 Roll Iterator
+2022-03-28
+time spent: .6 hours
+
+ DISCO:
+-We tried making remove() have a return type of T, but it was incompatible with Iterator
+-Iterable is handy for implementing for-each loops
+-Generic typing aids in generalizing this process
+
+QCC:
+-We had some unexpected troubles with next(), as we initially were skipping the first element, and later the last
+-Had we not nested the MyIterator class, what complications could have possibly arose?
+
  **/
 
 import java.util.Iterator;
