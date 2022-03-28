@@ -22,61 +22,38 @@ public class Latkes
   //constructor
   public Latkes( int initCapacity )
   {
-    /* your
-       SIMPLE
-       SMART
-       magicks
-       here
-    */
+    _stack = [];
+    _stackSize = initCapacity;
   }// O(?)
 
 
   //means of insertion
   public void push( String s )
   {
-    /* your
-       SIMPLE
-       SMART
-       magicks
-       here
-    */
-  }// O(?)
+    _stackSize++;
+    _stack[_stackSize] = s;
+  }// O(1)
 
 
   //means of removal
   public String pop( )
   {
-    /* your
-       SIMPLE
-       SMART
-       magicks
-       here
-    */
-  }// O(?)
+    _stackSize--;
+  }// O(1)
 
 
   //chk for emptiness
   public boolean isEmpty()
   {
-    /* your
-       SIMPLE
-       SMART
-       magicks
-       here
-    */
-  }// O(?)
+    return (_stackSize == 0);
+  }// O(1)
 
 
   //chk for fullness
   public boolean isFull()
   {
-    /* your
-       SIMPLE
-       SMART
-       magicks
-       here
-    */
-  }// O(?)
+    return (stack_);
+  }// O(1)
 
 
   //main method for testing
