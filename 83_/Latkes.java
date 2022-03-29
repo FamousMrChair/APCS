@@ -22,23 +22,35 @@ public class Latkes
   //constructor
   public Latkes( int initCapacity )
   {
-    _stack = [];
-    _stackSize = initCapacity;
+    _stack = new String[initCapacity];
+    _stackSize = 0;
   }// O(?)
 
 
   //means of insertion
   public void push( String s )
   {
-    _stackSize++;
+    if (isFull()){
+        String[] temp = new String[_stackSize *2];
+        for (int i = 0; i < _stackSize; i++){
+            temp[i] = _stack[i];
+        }
+        _stack = temp;
+    }
     _stack[_stackSize] = s;
+    _stackSize++;
   }// O(1)
 
 
   //means of removal
   public String pop( )
   {
+    if (isEmpty()){
+        return "null";
+    }
+     String temp = _stack[_stackSize-1];
     _stackSize--;
+      return temp;
   }// O(1)
 
 
@@ -52,14 +64,14 @@ public class Latkes
   //chk for fullness
   public boolean isFull()
   {
-    return (stack_);
+    return _stacksize == _stack.length;
   }// O(1)
 
 
   //main method for testing
   public static void main( String[] args )
   {
-    /*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
+   
 
     Latkes tastyStack = new Latkes(10);
 
@@ -103,6 +115,7 @@ public class Latkes
 
     //stack empty by now; SOP(null)
     System.out.println( tastyStack.pop() );
+       /*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
       ^~~~~~~~~~~~~~~~AWESOME~~~~~~~~~~~~~~~^*/
 
   }//end main()
