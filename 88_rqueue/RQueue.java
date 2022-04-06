@@ -25,28 +25,51 @@ public class RQueue<SWASHBUCKLE> implements Queue<SWASHBUCKLE>
   // default constructor creates an empty queue
   public RQueue()
   {
-
+    _front = null;
+    _end = null;
+    _size = 0;
   }
 
 
-  public void enqueue( T enQVal )
+  public void enqueue( SWASHBUCKLE enQVal )
   {
+   //special case: when enqueuing to an empty list,
+    //make _front && _end point to same node
+    if ( isEmpty() ) {
+      _front = _end = new LLNode<PIKACHU>( enQVal, null );
+    }
+    else {
+      _end.setNext( new LLNode<PIKACHU>( enQVal, null ) );
+      _end = _end.getNext();
+    }
+    _size++;
+    System.out.println("enqueued " + enQVal);
 
-  }//O(?)
+  }//O(1)
 
 
   // remove and return thing at front of queue
   // assume _queue ! empty
-  public T dequeue()
+  public SWASHBUCKLE dequeue()
   {
+    SWASHBUCKLE retVal = _front.getCargo();
+   _front = _front.getNext();
 
-  }//O(?)
+   if ( _front == null ) //just moved past last node
+     _end = null;      //update _end to reflect emptiness
+
+   _size--;
+
+   return retVal;
+
+ }//O(1)
 
 
-  public T peekFront()
+  public SWASHBUCKLE peekFront()
   {
+    return _front.getCargo();
 
-  }//O(?)
+  }//O(1)
 
 
   /***
@@ -56,6 +79,7 @@ public class RQueue<SWASHBUCKLE> implements Queue<SWASHBUCKLE>
    **/
   public void sample ()
   {
+
 
   }//O(?)
 
@@ -79,18 +103,18 @@ public class RQueue<SWASHBUCKLE> implements Queue<SWASHBUCKLE>
   {
 
       /*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
-    
+
     Queue<String> PirateQueue = new RQueue<String>();
-    System.out.println("\nnow enqueuing..."); 
+    System.out.println("\nnow enqueuing...");
     PirateQueue.enqueue("Dread");
     PirateQueue.enqueue("Pirate");
     PirateQueue.enqueue("Roberts");
     PirateQueue.enqueue("Blackbeard");
     PirateQueue.enqueue("Peter");
     PirateQueue.enqueue("Stuyvesant");
-    System.out.println("\nnow testing toString()..."); 
+    System.out.println("\nnow testing toString()...");
     System.out.println( PirateQueue ); //for testing toString()...
-    System.out.println("\nnow dequeuing..."); 
+    System.out.println("\nnow dequeuing...");
     System.out.println( PirateQueue.dequeue() );
     System.out.println( PirateQueue.dequeue() );
     System.out.println( PirateQueue.dequeue() );
@@ -98,7 +122,7 @@ public class RQueue<SWASHBUCKLE> implements Queue<SWASHBUCKLE>
     System.out.println( PirateQueue.dequeue() );
     System.out.println( PirateQueue.dequeue() );
     System.out.println("\nnow dequeuing fr empty queue...\n" +
-                       "(expect NPE)\n"); 
+                       "(expect NPE)\n");
     System.out.println( PirateQueue.dequeue() );
       ^~~~~~~~~~~~~~~~AWESOME~~~~~~~~~~~~~~~^*/
 
