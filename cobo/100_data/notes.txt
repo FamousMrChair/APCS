@@ -1,19 +1,12 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-APCS
-LAB08 --
-2022-04-05
-time spent: <elapsed time in hours, rounded to nearest tenth>
+ACTIVITY 1
+ 1. Google, Amazon, YouTube
+ 2. a. GOOGLE collects...
+        - Browser type and settings
+        - Operating system
+        - IP address
+    b. 
 
 
-DISCO
-
-
-QCC
-
-
-<TNPG>'s CSV FLOW:
-<insert your description of your tools and workflow in creating, editing CSV files>
-
-
-TRUBZ
-<this lab involves using tools that are likely to introduce hiccups; log any troubleshooting issues here>
+ACTIVITY 2
+ 1. Cereal
+ 2. 
