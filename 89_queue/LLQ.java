@@ -26,7 +26,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
       _end.setNext(temp);
       _end = _end.getNext();
    }
-   size ++;
+   _size ++;
   }//O(1)
 
 
@@ -36,7 +36,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
   {
    temp = _front.getCargo();
    _front = front.getNext();
-   size --;
+   _size --;
    return temp;
   }//O(1)
 
