@@ -7,7 +7,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
 
 
   // default constructor creates an empty queue
-  public LLQueue()
+  public LLQueue();
   {
      _size = 0;
      _front = _queue;
@@ -24,7 +24,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
       _end = _queue;
    } else{
       _end.setNext(temp);
-      _end = _end.getNext()
+      _end = _end.getNext();
    }
    size ++;
   }//O(1)
