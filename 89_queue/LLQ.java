@@ -1,4 +1,4 @@
-public class LLQ<QUASAR> implements Queue<QUASAR>
+public class LLQueue<QUASAR> implements Queue<QUASAR>
 {
   //instance variables
   private LLNode<QUASAR> _front, _end;
@@ -7,7 +7,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
 
 
   // default constructor creates an empty queue
-  public LLQ();
+  public LLQueue()
   {
      _size = 0;
      _front = _queue;
@@ -34,8 +34,8 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
   // assume _queue ! empty
   public QUASAR dequeue()
   {
-   temp = _front.getCargo();
-   _front = front.getNext();
+   QUASAR temp = _front.getCargo();
+   _front = _front.getNext();
    _size --;
    return temp;
   }//O(1)
@@ -53,7 +53,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
   {
     return _front == null;
   } //O(?)
-
+ 
  public class LLNode<QUASAR>{
     //instance vars
     private QUASAR _cargo;
@@ -100,10 +100,8 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
   //main method for testing
   public static void main( String[] args )
   {
-
-      /*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
     
-    Queue<String> PirateQueue = new RQueue<String>();
+    Queue<String> PirateQueue = new LLQueue<String>();
     System.out.println("\nnow enqueuing..."); 
     PirateQueue.enqueue("Dread");
     PirateQueue.enqueue("Pirate");
@@ -123,6 +121,7 @@ public class LLQ<QUASAR> implements Queue<QUASAR>
     System.out.println("\nnow dequeuing fr empty queue...\n" +
                        "(expect NPE)\n"); 
     System.out.println( PirateQueue.dequeue() );
+    /*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
       ^~~~~~~~~~~~~~~~AWESOME~~~~~~~~~~~~~~~^*/
 
   }//end main
