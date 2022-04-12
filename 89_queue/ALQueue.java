@@ -1,3 +1,16 @@
+/**
+Team Three Kevins: Kevin Li, Hamim Seam, Kevin Xiao
+APCS
+HW89 -- Queue two ways
+2022-04-11
+time spent: 1 hour
+DISCO
+    - Dequeueing within arraylists can be done with O(1) time complexity if you simply move the head index to the right and disregard the elements of the list to the elft.
+QCC
+    - Why isn't this code the same as what we did two homeworks ago?
+ **/
+
+
 import java.util.ArrayList;
 
 public class ALQueue<QUASAR> implements Queue<QUASAR> {
