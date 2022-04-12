@@ -1,3 +1,16 @@
+/**
+Team Three Kevins: Kevin Li, Hamim Seam, Kevin Xiao
+APCS
+HW89 -- Queue two ways
+2022-04-11
+time spent: 1 hour
+DISCO
+    - Dequeueing within arraylists can be done with O(1) time complexity if you simply move the head index to the right and disregard the elements of the list to the elft.
+QCC
+    - Why isn't this code the same as what we did two homeworks ago?
+ **/
+
+
 public class LLQueue<QUASAR> implements Queue<QUASAR>
 {
   //instance variables
@@ -44,7 +57,7 @@ public class LLQueue<QUASAR> implements Queue<QUASAR>
   public QUASAR peekFront()
   {
    return _front.getCargo();
-  }//O(?)
+  }//O(1)
 
 
 
@@ -52,7 +65,7 @@ public class LLQueue<QUASAR> implements Queue<QUASAR>
   public boolean isEmpty()
   {
     return _front == null;
-  } //O(?)
+  } //O(1)
  
  public class LLNode<QUASAR>{
     //instance vars
