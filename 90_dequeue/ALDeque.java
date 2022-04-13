@@ -34,15 +34,7 @@ public class LLDeque<T> implements Deque<T>{
   public int size() {
     return deque.size();
   }
-  
-  public boolean offerFirst( T element ) {
-		
-  }
-  
-  public boolean offerLast( T element ) {
-    
-  }
-
+	
   public T pollFirst() {
 		if (!deque.isEmpty()) {
       return removeFirst();
