@@ -75,11 +75,11 @@ public class ALDeque<T> implements Deque<T>{
     for (int i = 0; i < 50; i ++){
       Kevin.addLast(i);
     }
-    while (deque.size() > 0){
-      if (deque.size() > 0) {
+    while (Kevin.size() > 0){
+      if (Kevin.size() > 0) {
         System.out.println(Kevin.removeFirst());
       }
-      if (deque.size() > 0) {
+      if (Kevin.size() > 0) {
         System.out.println(Kevin.removeLast());
       }
     }
