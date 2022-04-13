@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ALDeque<T> implements Deque<T>{
  
-  List<T> _deque;
+  ArrayList<T> _deque;
 
   public ALDeque() {
     deque = new ArrayList<T>();
