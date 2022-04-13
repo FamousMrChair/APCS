@@ -76,7 +76,7 @@ public class ALDeque<T> implements Deque<T>{
     return deque.get(deque.size() - 1);
   }
   
-  public static void main (String[] args){
+  public void main (String[] args){
     Deque<T> Kevin = new ALDeque<T>();
     for (int i = 0; i < 50; i ++){
       Kevin.addFirst(i);
