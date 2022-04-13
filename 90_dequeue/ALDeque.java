@@ -66,6 +66,16 @@ public class ALDeque<T> implements Deque<T>{
   public T getLast() {
     return deque.get(deque.size() - 1);
   }
+	
+	
+  public String toString() {
+      String output = "";
+      for (int i = 0; i < deque.size(); i++) {
+          output += deque.get(i);
+          output += ", ";
+      }
+      return output;
+  }
   
   public static void main (String[] args){
     Deque<Integer> Kevin = new ALDeque<Integer>();
