@@ -1,11 +1,21 @@
+/*
+Team Three Kevins: Kevin Li, Hamim Seam, Kevin Xiao
+APCS
+HW91 -- Deque
+2022-04-13
+time spent: 1 hour
+*/
+
 import java.util.ArrayList;
+import java.util.Iterator;
+
+import javax.lang.model.element.Element;
 
 public class ALDeque<T> implements Deque<T>{
- 
   ArrayList<T> deque;
 
   public ALDeque() {
-    deque = new ArrayList<T>();
+      deque = new ArrayList<T>();
   }
   
   public void addFirst( T element) {
@@ -45,8 +55,9 @@ public class ALDeque<T> implements Deque<T>{
   public int size() {
     return deque.size();
   }
+
   public T pollFirst() {
-		if (!deque.isEmpty()) {
+	if (!deque.isEmpty()) {
       return removeFirst();
     }
     return null;
@@ -58,7 +69,7 @@ public class ALDeque<T> implements Deque<T>{
     }
     return null;
   }
-  
+
   public T getFirst() {
     return deque.get(0);
 	}
@@ -66,50 +77,55 @@ public class ALDeque<T> implements Deque<T>{
   public T getLast() {
     return deque.get(deque.size() - 1);
   }
-	
-	
+
   public String toString() {
-      String output = "";
-      for (int i = 0; i < deque.size(); i++) {
-          output += deque.get(i);
-          output += ", ";
-      }
-      return output;
+      return deque.toString();
   }
+
+  public Iterator<T> iterator() {
+    return deque.iterator();
+  }
+
+  public Iterator<T> descendingIterator() {
+    ALDeque<T> temp = new ALDeque();
+    for (T element : deque) {
+      temp.addFirst(element);
+    }
+    return temp.iterator();
+  }
+
+  public boolean contains(Object o) {
+    for (Object element : deque) {
+      if (element.equals(o)) {
+        return true;
+      }
+    }
+    return false;
+  } 
+
+  public boolean removeFirstOccurence(Object o) {
+    return deque.remove(o);
+  }
+
+  public boolean removeLastOccurence(Object o) {
+    for (int i = deque.size() - 1; i > 0; i--) {
+        if (deque.get(i).equals(o)) {
+            deque.remove(i);
+            return true;
+        }
+    }
+    return false;
+  }
+
+
+  /*
+  public boolean offerFirst( T element ) {
+		
+  }
+
+  public boolean offerLast( T element ) {
   
-  public static void main (String[] args){
-    Deque<Integer> Kevin = new ALDeque<Integer>();
-    for (int i = 0; i < 50; i ++){
-      Kevin.addFirst(i);
-    }
-    for (int i = 0; i < 50; i ++){
-      Kevin.addLast(i);
-    }
-    while (Kevin.size() > 0){
-      if (Kevin.size() > 0) {
-        System.out.println(Kevin.removeFirst());
-      }
-      if (Kevin.size() > 0) {
-        System.out.println(Kevin.removeLast());
-      }
-    }
-      ALDeque kevin = new ALDeque<>();
-
-      System.out.println(kevin.peekFirst()); //null
-      System.out.println(kevin.peekLast()); //null
-
-      kevin.addFirst("hello");
-      System.out.println(kevin);
-      kevin.addFirst("hi");
-      kevin.addLast("hey");
-      System.out.println(kevin);
-
-      System.out.println(kevin.peekFirst()); //hi
-      System.out.println(kevin.peekLast()); //hey
-
-      kevin.pollLast();
-      System.out.println(kevin);
-      kevin.pollFirst();
-      System.out.println(kevin);
   }
+  */
+  
 }
