@@ -3,6 +3,18 @@
  * SKELETON
  * Implements a node for use in a binary tree.
  * Only holds int cargo.
+Gatekeeping Gaslighting Girlbosses: Kevin Xiao, Lauren Lee, Kevin Li
+APCS
+HW95 -- Algorithm as data structure
+2022-06-09
+time spent: .5 hours
+DISCO
+    - There's only one unique tree for BST given a set of values 
+    - 
+QCC
+    - How can we make it print to look like an actual tree
+    - When objects are declared, they are declared as null, so why do we need to initialize the _root to null? (it works without initializing)
+    - If a node is equal to another node, do you put it on the left or right, and which one should be the child or the parent. Does it matter?
  */
 
 public class TreeNode
@@ -30,7 +42,9 @@ public class TreeNode
    */
   TreeNode( int initValue, TreeNode initLeft, TreeNode initRight )
   {
-
+    _cargo = initValue;
+    _lt = initLeft;
+    _rt = initRight;
   }
 
 
@@ -39,7 +53,7 @@ public class TreeNode
    */
   TreeNode getLeft()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    return _lt;
   }
 
 
@@ -48,7 +62,7 @@ public class TreeNode
    */
   TreeNode getRight()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    return _rt;
   }
 
 
@@ -57,7 +71,7 @@ public class TreeNode
    */
   int getValue()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    return _cargo;
   }
 
 
@@ -66,7 +80,7 @@ public class TreeNode
    */
   void setLeft( TreeNode theNewLeft )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    _lt = theNewLeft;
   }
 
 
@@ -75,16 +89,16 @@ public class TreeNode
    */
   void setRight( TreeNode theNewRight )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    _rt = theNewRight;
   }
 
 
   /**
    * Sets the value of this tree node.
    */
-  void setValue( int theNewValue )
+  void setValue( int theNewValue ) 
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    _cargo = theNewValue;
   }
 
 }//end class
