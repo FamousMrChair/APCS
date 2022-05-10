@@ -11,7 +11,21 @@
  *  and any value in its right subtree must be greater.)
  *
  * This BST implementation only holds ints (its nodes have int cargo)
+ * 
+Gatekeeping Gaslighting Girlbosses: Kevin Xiao, Lauren Lee, Kevin Li
+APCS
+HW95 -- Algorithm as data structure
+2022-06-09
+time spent: .5 hours
+DISCO
+    - There's only one unique tree for BST given a set of values 
+    - 
+QCC
+    - How can we make it print to look like an actual tree
+    - When objects are declared, they are declared as null, so why do we need to initialize the _root to null? (it works without initializing)
+    - If a node is equal to another node, do you put it on the left or right, and which one should be the child or the parent. Does it matter?
  */
+
 
 public class BST
 {
@@ -24,7 +38,7 @@ public class BST
    */
   BST()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    _root = null;
   }
 
 
@@ -35,12 +49,30 @@ public class BST
   public void insert( int newVal )
   {
     TreeNode newNode = new TreeNode( newVal );
-    /*** YOUR IMPLEMENTATION HERE ***/
+    if (_root == null){
+    	_root = newNode;
+    } else {
+    	insert(_root, newNode);
+    }
+
   }
   //recursive helper for insert(int)
   public void insert( TreeNode stRoot, TreeNode newNode )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    if (newNode.getValue() < stRoot.getValue()){
+    	if (stRoot.getLeft() == null){
+      	stRoot.setLeft(newNode);
+      } else{
+      	insert(stRoot.getLeft(), newNode);
+      }
+    } else if (newNode.getValue() >= stRoot.getValue()){
+    	if (stRoot.getRight() == null){
+      	stRoot.setRight(newNode);
+      } else{
+      	insert(stRoot.getRight(), newNode);
+      }
+    }
+    
   }//end insert()
 
 
@@ -59,27 +91,51 @@ public class BST
   }
   public void preOrderTrav( TreeNode currNode )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    System.out.print(currNode.getValue());
+  	if (currNode.getLeft() != null) {
+    	preOrderTrav(currNode.getLeft());
+    }
+    
+    if (currNode.getRight() != null) {
+    	preOrderTrav(currNode.getRight());
+
+    }
+
   }
 
   //recurse left, process root, recurse right
   public void inOrderTrav()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    inOrderTrav(_root);
   }
   public void inOrderTrav( TreeNode currNode )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    
+  	if (currNode.getLeft() != null) {
+    	inOrderTrav(currNode.getLeft());
+    }
+    System.out.print(currNode.getValue());
+    if (currNode.getRight() != null) {
+    	inOrderTrav(currNode.getRight());
+    }
+
   }
 
   //recurse left, recurse right, process root
   public void postOrderTrav()
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    postOrderTrav(_root);
   }
   public void postOrderTrav( TreeNode currNode )
   {
-    /*** YOUR IMPLEMENTATION HERE ***/
+    if (currNode.getLeft() != null) {
+    	postOrderTrav(currNode.getLeft());
+    }
+    if (currNode.getRight() != null) {
+    	postOrderTrav(currNode.getRight());
+    }
+    System.out.print(currNode.getValue());
+
   }
 
   //~~~~~~~~~~~~~^~~TRAVERSALS~~^~~~~~~~~~~~~~~~~~~~~~
@@ -89,8 +145,6 @@ public class BST
   //main method for testing
   public static void main( String[] args )
   {
-    /*~~~~~~~~~~~~move~me~down~~~~~~~~~~~~~~~~~~~~~~
-
       BST arbol = new BST();
 
       //PROTIP: sketch state of tree after each insertion
@@ -115,6 +169,7 @@ public class BST
       arbol.postOrderTrav();
 
       System.out.println( "\n-----------------------------");
+      /*~~~~~~~~~~~~move~me~down~~~~~~~~~~~~~~~~~~~~~~
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   }
 
